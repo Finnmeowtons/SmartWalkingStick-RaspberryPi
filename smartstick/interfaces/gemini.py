@@ -1,5 +1,5 @@
 import google.generativeai as genai
-from config import GEMINI_API_KEY
+from smartstick.utils.config import GEMINI_API_KEY
 
 genai.configure(api_key=GEMINI_API_KEY)
 model_gemini = genai.GenerativeModel('gemini-2.5-flash-lite')

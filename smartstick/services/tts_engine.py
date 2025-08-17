@@ -6,7 +6,7 @@ from gtts import gTTS
 import tempfile
 import os
 import playsound
-from config import PIPER_MODEL
+from smartstick.utils.config import PIPER_MODEL
 
 # Load Piper model (offline)
 voice = PiperVoice.load(*PIPER_MODEL)

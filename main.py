@@ -2,12 +2,13 @@
 import json
 import sys
 import time
-from config import WAKEWORDS
+from smartstick.utils.config import WAKEWORDS
 from stt_engine import stream, recognizer
 from chat_engine import ask_gemini
-from tts_engine import tts_piper, tts_gtts
-from music_player import play_song_youtube, stop_music
-from vision import detect_objects_and_speak
+from smartstick.services.tts_engine import tts_piper, tts_gtts
+from smartstick.services.music_player import play_song_youtube, stop_music
+from smartstick.hardware.vision import detect_objects_and_speak
+from smartstick.hardware.gps import
 
 print("\nWaiting for WakeWord...")
 isChatActive = False

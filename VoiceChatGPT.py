@@ -5,11 +5,12 @@ import time
 import contextlib
 import pyaudio
 import io
+import cv2
+
 from vosk import Model, KaldiRecognizer
 import google.generativeai as genai
 from piper import PiperVoice
 import numpy as np
-import cv2
 from ultralytics import YOLO
 from collections import Counter
 import subprocess
@@ -35,14 +36,14 @@ def askGemini(prompt):
 # TTS Configuration
 # ──────────────────────────────────────────────
 voice = PiperVoice.load(
-    "models/piper/en/amy/en_US-amy-medium.onnx",
-    "models/piper/en/amy/en_US-amy-medium.onnx.json"
+    "smartstick/models/piper/en/amy/en_US-amy-medium.onnx",
+    "smartstick/models/piper/en/amy/en_US-amy-medium.onnx.json"
 )
 
 # ──────────────────────────────────────────────
 # Vosk Speech Recognition Configuration
 # ──────────────────────────────────────────────
-model_path = "models/vosk-model-tl-ph-generic-0.6/"
+model_path = "smartstick/models/vosk-model-tl-ph-generic-0.6/"
 if not os.path.exists(model_path):
     print(f"Model '{model_path}' was not found. Please check the path.")
     exit(1)

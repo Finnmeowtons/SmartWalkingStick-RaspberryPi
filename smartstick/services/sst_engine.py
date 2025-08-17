@@ -1,7 +1,7 @@
 import os
 import pyaudio
 from vosk import Model, KaldiRecognizer
-from config import VOSK_MODEL_PATH
+from smartstick.utils.config import VOSK_MODEL_PATH
 
 if not os.path.exists(VOSK_MODEL_PATH):
     raise FileNotFoundError(f"Vosk model not found at {VOSK_MODEL_PATH}")

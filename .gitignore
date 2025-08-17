@@ -8,7 +8,7 @@ __pycache__/
 *.pyd
 
 # Models (large files)
-models/
+smartstick/models/
 yolov8n.pt
 
 # IDE / Editor
