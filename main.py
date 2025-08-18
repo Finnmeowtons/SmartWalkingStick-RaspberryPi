@@ -1,16 +1,23 @@
-# main.py
 import json
 import sys
 import time
+import asyncio
 from smartstick.utils.config import WAKEWORDS
-from stt_engine import stream, recognizer
-from chat_engine import ask_gemini
-from smartstick.services.tts_engine import tts_piper, tts_gtts
+from smartstick.interfaces.gemini import ask_gemini
+from smartstick.services.stt_engine import stream, recognizer
+from smartstick.services.tts_engine import tts_speak
 from smartstick.services.music_player import play_song_youtube, stop_music
 from smartstick.hardware.vision import detect_objects_and_speak
-from smartstick.hardware.gps import
+# from smartstick.hardware.gps import
+from smartstick.core import preload
+
+preload.preload_all()
+
+def trigger_object_detection():
+    asyncio.run(detect_objects_and_speak())
 
 print("\nWaiting for WakeWord...")
+
 isChatActive = False
 last_sound_time = time.time()
 
@@ -30,15 +37,21 @@ while True:
                 if "kumare" in text_lower or "kumpare" in text_lower:
                     prompt = text_lower.replace("kumare", "").replace("kumpare", "").strip()
                     reply = ask_gemini(prompt)
-                    tts_gtts(reply, lang="tl")  # Online TTS for Tagalog
+                    tts_speak(reply, lang="tl")  # Online TTS for Tagalog
                 elif "music" in text_lower:
-                    play_song_youtube(text_lower.replace("makinig ng music", "").replace("listen to music", "").replace("tugtug", "").replace("tugtog", "").strip())
+                    play_song_youtube(
+                        text_lower.replace("makinig ng music", "")
+                                  .replace("listen to music", "")
+                                  .replace("tugtug", "")
+                                  .replace("tugtog", "")
+                                  .strip()
+                    )
                 elif "stop" in text_lower:
                     stop_music()
                 elif "nasa harap" in text_lower:
-                    detect_objects_and_speak()
+                    trigger_object_detection()
                 else:
-                    tts_piper("Hindi kita gets bes.")
+                    tts_speak("Hindi kita gets bes.")
 
                 stream.start_stream()
                 continue
