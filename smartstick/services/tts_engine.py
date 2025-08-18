@@ -11,7 +11,23 @@ from smartstick.utils.network_utils import ONLINE
 # Load Piper model (offline fallback)
 voice = PiperVoice.load(PIPER_MODEL)
 
+# --- Global playback process ---
+current_playback = None
+
+def stop_tts():
+    """Stop any ongoing speech immediately."""
+    global current_playback
+    if current_playback and current_playback.poll() is None:
+        try:
+            current_playback.terminate()
+            current_playback.kill()
+        except Exception:
+            pass
+        current_playback = None
+        print("🛑 Speech stopped.")
+
 def tts_piper(text: str):
+    global current_playback
     print("🔊 Speaking (Offline - Piper)...")
     audio_stream = voice.synthesize(text)
 
@@ -20,32 +36,50 @@ def tts_piper(text: str):
     audio_int16 = (all_audio * 32767).astype(np.int16)
 
     # Save temporary WAV
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=True) as f:
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
         with wave.open(f.name, "wb") as wf:
             wf.setnchannels(1)
             wf.setsampwidth(2)
             wf.setframerate(22050)
             wf.writeframes(audio_int16.tobytes())
 
-        subprocess.run(["aplay", "-q", f.name])
+        # Non-blocking playback
+        stop_tts()
+        current_playback = subprocess.Popen(["aplay", "-q", f.name])
+        # no wait() → runs in background
+        # cleanup later
+        def cleanup():
+            try:
+                os.unlink(f.name)
+            except FileNotFoundError:
+                pass
+        # spawn cleanup thread
+        subprocess.Popen(["/bin/sh", "-c", f"sleep 2; rm -f {f.name}"])
 
 def tts_google(text: str, lang="tl"):
+    global current_playback
     print("🔊 Speaking (Online - Google TTS)...")
     try:
         tts = gTTS(text=text, lang=lang)
         with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as tmp:
             tts.save(tmp.name)
-            subprocess.run([
-                "ffplay", "-nodisp", "-autoexit",
-                "-af", "atempo=1.5", tmp.name
+
+            stop_tts()
+            current_playback = subprocess.Popen([
+                "ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet",
+                "-af", "atempo=1.1", tmp.name
             ])
-        os.unlink(tmp.name)
+            # no wait() → runs in background
+
+            # cleanup file later
+            subprocess.Popen(["/bin/sh", "-c", f"sleep 2; rm -f {tmp.name}"])
     except Exception as e:
         print(f"[TTS] gTTS failed, falling back to Piper. Error: {e}")
         tts_piper(text)
 
 def tts_speak(text: str, lang="tl"):
     """Unified entrypoint: Use Google if online, else Piper fallback."""
+    stop_tts()  # stop previous playback before starting a new one
     if ONLINE:
         tts_google(text, lang=lang)
     else:

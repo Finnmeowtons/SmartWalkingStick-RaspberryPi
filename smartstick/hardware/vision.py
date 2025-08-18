@@ -7,7 +7,7 @@ import google.generativeai as genai
 from ultralytics import YOLO
 from collections import Counter
 from smartstick.utils.config import GEMINI_API_KEY, get_path
-from smartstick.services.tts_engine import tts_piper
+from smartstick.services.tts_engine import tts_speak
 from smartstick.utils.network_utils import ONLINE
 from smartstick.interfaces.gemini import detect_online
 
@@ -26,7 +26,7 @@ def detect_offline(image_path):
     for label, count in label_counts.items():
         description_parts.append(f"{count} {label}" if count > 1 else f"1 {label}")
 
-    return "Nakikita ko: " + ", ".join(description_parts) if description_parts else "Walang nakita."
+    return "I see: " + ", ".join(description_parts) if description_parts else "Walang nakita."
 
 async def detect_objects_and_speak():
     loop = asyncio.get_event_loop()
@@ -48,7 +48,7 @@ async def detect_objects_and_speak():
         description = await loop.run_in_executor(executor, detect_offline, img_path)
 
     # --- Run TTS in background too ---
-    await loop.run_in_executor(executor, tts_piper, description)
+    await loop.run_in_executor(executor, tts_speak, description)
 
 async def main():
     await detect_objects_and_speak()

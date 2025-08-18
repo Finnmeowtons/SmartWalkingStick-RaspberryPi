@@ -11,6 +11,19 @@ def clean_text(text: str) -> str:
     # Remove extra whitespace
     return text.strip()
 
+def polish_music_command(raw_text: str) -> str:
+    try:
+        prompt = "Extract only the music title from this input, no extra words: " + raw_text
+
+        response = client.models.generate_content(
+            model='gemini-2.5-flash-lite',
+            contents=[prompt]
+        )
+        return response.text.strip()
+    except Exception as e:
+        print(f"Gemini error: {e}")
+        return raw_text  # fallback to original
+
 def ask_gemini(prompt: str) -> str:
     """
     Send a text prompt to Gemini and return a concise response suitable for blind users.
@@ -21,6 +34,9 @@ def ask_gemini(prompt: str) -> str:
             "Answer concise and clearly for a visually impaired person. also in taglish(like a conyo in bgc)"
             "Give details yet short unless they want more details."
             "Ignore 'tanungin mo kay kumare/kumpare' its just a voice command trigger."
+            "Output only the description itself. Do not mention"
+            "No introductions like 'Sure, here is...'"
+            "No extra context like 'as if...'"
             + prompt
         )
         print(full_prompt)
@@ -35,7 +51,7 @@ def ask_gemini(prompt: str) -> str:
         return f"Error: {e}"
 
 
-def detect_online(image_path: str, prompt: str = "Describe objects in this image simply and shortly, for a blind person.") -> str:
+def detect_online(image_path: str, prompt: str = "Describe objects in this image simply and shortly(in taglish like conyo in bgc), for a blind person.") -> str:
     """
     Send an image + prompt to Gemini and return a description.
     """
