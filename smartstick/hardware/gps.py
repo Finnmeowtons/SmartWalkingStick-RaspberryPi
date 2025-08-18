@@ -3,7 +3,6 @@ import requests
 import time
 from smartstick.utils.config import GPS_PORT, GPS_BAUD, MLS_URL
 
-# --- Helper: Parse GPS NMEA for lat/lon ---
 def parse_gpgga(line):
     try:
         parts = line.split(",")
@@ -22,7 +21,6 @@ def parse_gpgga(line):
         return None
     return None
 
-# --- Try GPS ---
 def get_gps_location(timeout=10):
     try:
         ser = serial.Serial(GPS_PORT, GPS_BAUD, timeout=1)
@@ -37,7 +35,6 @@ def get_gps_location(timeout=10):
         print("GPS Error:", e)
     return None
 
-# --- Mozilla Wi-Fi/Cell positioning ---
 def get_mozilla_location(wifi=[], cells=[]):
     payload = {}
     if wifi:

@@ -38,7 +38,18 @@
 
   * Play specific songs using YouTube search.
   * Stop playback or TTS using voice commands.
-* Optionally announces **song title via TTS** while starting playback.
+* Announces **song title via TTS** while starting playback.
+
+* Uses **Google Gemini API** (if online) to **extract and clean user music commands**.
+
+  * Only the music title is extracted; unnecessary words are removed.
+  * Falls back to text replacement if **offline** or **Gemini fails**.
+
+### 🔔 Sound Cues
+
+* Plays **audio cues** when Jodi is **listening** or **idle**.
+* Randomly selects from multiple `.wav` files.
+* Volume adjustable to avoid overpowering TTS or music.
 
 ### 🧩 Modular Design
 

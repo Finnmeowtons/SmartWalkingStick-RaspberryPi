@@ -2,13 +2,11 @@ import re
 from google.genai import Client, types
 from smartstick.utils.config import GEMINI_API_KEY, get_path
 
-# Initialize Gemini client
 client = Client(api_key=GEMINI_API_KEY)
 
 def clean_text(text: str) -> str:
-    # Remove markdown asterisks, underscores, etc.
+    # Remove unneccesarry char
     text = re.sub(r"[*_`]", "", text)
-    # Remove extra whitespace
     return text.strip()
 
 def polish_music_command(raw_text: str) -> str:
@@ -22,14 +20,10 @@ def polish_music_command(raw_text: str) -> str:
         return response.text.strip()
     except Exception as e:
         print(f"Gemini error: {e}")
-        return raw_text  # fallback to original
+        return raw_text  # fallback
 
 def ask_gemini(prompt: str) -> str:
-    """
-    Send a text prompt to Gemini and return a concise response suitable for blind users.
-    """
     try:
-        # Concatenate the instruction with the user prompt
         full_prompt = (
             "Answer concise and clearly for a visually impaired person. also in taglish(like a conyo in bgc)"
             "Give details yet short unless they want more details."
@@ -52,9 +46,6 @@ def ask_gemini(prompt: str) -> str:
 
 
 def detect_online(image_path: str, prompt: str = "Describe objects in this image simply and shortly(in taglish like conyo in bgc), for a blind person.") -> str:
-    """
-    Send an image + prompt to Gemini and return a description.
-    """
     try:
         with open(image_path, "rb") as f:
             image_bytes = f.read()
