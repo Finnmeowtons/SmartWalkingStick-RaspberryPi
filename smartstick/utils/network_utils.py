@@ -5,10 +5,7 @@ import time
 ONLINE = True  # Global flag
 
 def check_network(host="8.8.8.8", port=53, timeout=2, interval=5):
-    """
-    Continuously check network status in the background.
-    Updates the global ONLINE flag.
-    """
+
     global ONLINE
     while True:
         try:
@@ -21,7 +18,6 @@ def check_network(host="8.8.8.8", port=53, timeout=2, interval=5):
             if ONLINE == True:
                 print("offline")
             ONLINE = False
-        time.sleep(interval)  # check every `interval` seconds
+        time.sleep(interval) 
 
-# Start the network monitor in a separate thread
 threading.Thread(target=check_network, daemon=True).start()

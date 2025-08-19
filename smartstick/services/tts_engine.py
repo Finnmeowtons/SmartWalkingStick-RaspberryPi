@@ -11,11 +11,9 @@ from smartstick.utils.network_utils import ONLINE
 # Load Piper model (offline fallback)
 voice = PiperVoice.load(PIPER_MODEL)
 
-# --- Global playback process ---
 current_playback = None
 
 def stop_tts():
-    """Stop any ongoing speech immediately."""
     global current_playback
     if current_playback and current_playback.poll() is None:
         try:
@@ -31,11 +29,9 @@ def tts_piper(text: str):
     print("🔊 Speaking (Offline - Piper)...")
     audio_stream = voice.synthesize(text)
 
-    # Convert to numpy
     all_audio = np.concatenate([chunk.audio_float_array for chunk in audio_stream])
     audio_int16 = (all_audio * 32767).astype(np.int16)
 
-    # Save temporary WAV
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
         with wave.open(f.name, "wb") as wf:
             wf.setnchannels(1)
@@ -46,8 +42,7 @@ def tts_piper(text: str):
         # Non-blocking playback
         stop_tts()
         current_playback = subprocess.Popen(["aplay", "-q", f.name])
-        # no wait() → runs in background
-        # cleanup later
+
         def cleanup():
             try:
                 os.unlink(f.name)
@@ -69,9 +64,7 @@ def tts_google(text: str, lang="tl"):
                 "ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet",
                 "-af", "atempo=1.1", tmp.name
             ])
-            # no wait() → runs in background
 
-            # cleanup file later
             subprocess.Popen(["/bin/sh", "-c", f"sleep 2; rm -f {tmp.name}"])
     except Exception as e:
         print(f"[TTS] gTTS failed, falling back to Piper. Error: {e}")
@@ -79,7 +72,7 @@ def tts_google(text: str, lang="tl"):
 
 def tts_speak(text: str, lang="tl"):
     """Unified entrypoint: Use Google if online, else Piper fallback."""
-    stop_tts()  # stop previous playback before starting a new one
+    stop_tts() 
     if ONLINE:
         tts_google(text, lang=lang)
     else:

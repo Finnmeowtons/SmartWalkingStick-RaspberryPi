@@ -5,7 +5,6 @@ import re
 ser = serial.Serial("/dev/serial0", baudrate=115200, timeout=1)
 
 def send_at(command, delay=1):
-    """Send AT command and return response"""
     ser.write((command + "\r\n").encode())
     time.sleep(delay)
     resp = ser.read(ser.in_waiting).decode(errors="ignore")

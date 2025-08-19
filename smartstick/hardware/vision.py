@@ -14,7 +14,6 @@ from smartstick.interfaces.gemini import detect_online
 executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
 
 
-# --- Offline YOLO ---
 def detect_offline(image_path):
     model_yolo = YOLO("smartstick/models/yolov8n.pt")
     results = model_yolo(image_path)
@@ -31,7 +30,6 @@ def detect_offline(image_path):
 async def detect_objects_and_speak():
     loop = asyncio.get_event_loop()
 
-    # --- Capture frame (fast, sync is fine) ---
     print("📷 Taking a pic")
     cam = cv2.VideoCapture(0)
     ret, frame = cam.read()
@@ -41,13 +39,12 @@ async def detect_objects_and_speak():
         print("Image saved on path:", img_path)
     cam.release()
 
-    # --- Run detection in background thread ---
     if ONLINE:
         description = await loop.run_in_executor(executor, detect_online, img_path)
     else:
         description = await loop.run_in_executor(executor, detect_offline, img_path)
 
-    # --- Run TTS in background too ---
+    # Run TTS in background
     await loop.run_in_executor(executor, tts_speak, description)
 
 async def main():

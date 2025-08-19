@@ -13,10 +13,6 @@ SOUND_CUES = {
 }
 
 def play_sound(cue: str, volume: float = 0.1):
-    """
-    Play a random sound for the given cue ('listening' or 'idle').
-    Volume: 0.0 (silent) to 1.0 (full)
-    """
     if cue not in SOUND_CUES:
         print(f"[SoundCue] No sounds defined for cue '{cue}'")
         return

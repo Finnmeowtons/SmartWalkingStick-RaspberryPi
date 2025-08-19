@@ -9,7 +9,7 @@ import time
 
 current_music = None
 mpv_socket_path = "/tmp/mpvsocket"
-current_volume = 0.2  # default 20%
+current_volume = 0.2  # 20%
 current_audio_url = None
 
 def send_mpv_command(command: dict):
@@ -61,13 +61,11 @@ def play_song_youtube(song_name):
         current_audio_url = audio_url
 
         def speak_and_play():
-            # Speak title asynchronously
             tts_thread = threading.Thread(target=tts_speak, args=(f"Playing {title}", "tl"))
             tts_thread.start()
 
             time.sleep(1.0)
 
-            # Start mpv asynchronously
             if os.path.exists(mpv_socket_path):
                 os.unlink(mpv_socket_path)
             global current_music

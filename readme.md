@@ -51,6 +51,16 @@
 * Randomly selects from multiple `.wav` files.
 * Volume adjustable to avoid overpowering TTS or music.
 
+### 📏 Obstacle Detection (NEW)
+
+* Uses **VL53L0X ToF (Time-of-Flight) sensor** for distance measurement.
+* Provides **real-time vibration feedback** through a coin vibration motor.
+* **Dynamic vibration strength**:
+
+  * Stronger vibration when objects are **closer**.
+  * Weaker vibration when objects are **farther**.
+* Can be toggled **ON/OFF by voice command**
+
 ### 🧩 Modular Design
 
 * `base_dir` is defined globally so all modules can access paths consistently.
@@ -58,6 +68,7 @@
 * `speech.py` → TTS logic (offline + online).
 * `music_player.py` → YouTube playback, real-time volume, TTS integration.
 * `network.py` → connectivity checks.
+* `time_of_flight.py` & `vibrator.py` → obstacle detection system.
 * `main.py` → orchestrates everything.
 
 ---
@@ -66,4 +77,3 @@
 
 * **Fast startup**: loads essentials like Piper immediately.
 * **Lazy loading**: heavy models (YOLO, Gemini) are loaded in background threads.
-

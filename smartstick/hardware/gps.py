@@ -55,7 +55,6 @@ def get_mozilla_location(wifi=[], cells=[]):
         print("Mozilla Error:", e)
         return None
 
-# --- Unified location function ---
 def get_location():
     # 1. Try GPS
     gps_loc = get_gps_location()
