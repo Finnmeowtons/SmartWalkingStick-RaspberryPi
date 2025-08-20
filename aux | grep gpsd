@@ -1,0 +1,1818 @@
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Starting xdg-desktop-portal.service - Portal service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 76.[0m
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.16' (uid=1000 pid=1060 comm="/usr/libexec/xdg-desktop-portal")
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Starting xdg-document-portal.service - flatpak document portal service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 96.[0m
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.17' (uid=1000 pid=1070 comm="/usr/libexec/xdg-document-portal")
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Starting xdg-permission-store.service - sandboxed app permission store...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 116.[0m
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Started xdg-permission-store.service - sandboxed app permission store.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 116.[0m
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.freedesktop.portal.Documents'
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Started xdg-document-portal.service - flatpak document portal service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 96.[0m
+Aug 20 19:02:41 christianjosesoriano xdg-document-portal[1070]: Ignoring invalid max threads value 4294967295 > max (100000).
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.16' (uid=1000 pid=1060 comm="/usr/libexec/xdg-desktop-portal")
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.11' (uid=1000 pid=953 comm="/usr/bin/pcmanfm --desktop --profile LXDE-pi")
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Starting gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 155.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 136.[0m
+Aug 20 19:02:41 christianjosesoriano NetworkManager[646]: <info>  [1755687761.8491] manager: startup complete
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Finished NetworkManager-wait-online.service - Network Manager Wait Online.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-wait-online.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-wait-online.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 121.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Reached target network-online.target - Network is Online.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit network-online.target has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit network-online.target has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 120.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Started cups-browsed.service - Make remote CUPS printers available locally.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit cups-browsed.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit cups-browsed.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 138.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Reached target multi-user.target - Multi-User System.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit multi-user.target has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit multi-user.target has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Reached target graphical.target - Graphical Interface.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit graphical.target has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit graphical.target has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Starting rpc-statd-notify.service - Notify NFS peers of a restart...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit rpc-statd-notify.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit rpc-statd-notify.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 119.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Starting systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-update-utmp-runlevel.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-update-utmp-runlevel.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 135.[0m
+Aug 20 19:02:41 christianjosesoriano sm-notify[1092]: [0;1;39m[0;1;31m[0;1;39mVersion 2.6.2 starting[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Started rpc-statd-notify.service - Notify NFS peers of a restart.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit rpc-statd-notify.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit rpc-statd-notify.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 119.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-update-utmp-runlevel.service has successfully entered the 'dead' state.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Finished systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-update-utmp-runlevel.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-update-utmp-runlevel.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 135.[0m
+Aug 20 19:02:41 christianjosesoriano systemd[1]: Startup finished in 2.210s (kernel) + 10.723s (userspace) = 12.934s.
+[0;38;5;245m░░ [0m[0;32mSubject: System start-up is now complete[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAll system services necessary queued for starting at boot have been[0m
+[0;38;5;245m░░[0m [0;32mstarted. Note that this does not mean that the machine is now idle as services[0m
+[0;38;5;245m░░[0m [0;32mmight still be busy with completing start-up.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mKernel start-up required 2210997 microseconds.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mInitrd start-up required INITRD_USEC microseconds.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mUserspace start-up required 10723088 microseconds.[0m
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 155.[0m
+Aug 20 19:02:41 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.11' (uid=1000 pid=953 comm="/usr/bin/pcmanfm --desktop --profile LXDE-pi")
+Aug 20 19:02:41 christianjosesoriano systemd[747]: Starting gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 175.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 175.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.11' (uid=1000 pid=953 comm="/usr/bin/pcmanfm --desktop --profile LXDE-pi")
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Starting gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 195.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 136.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 195.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.11' (uid=1000 pid=953 comm="/usr/bin/pcmanfm --desktop --profile LXDE-pi")
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Starting gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 215.[0m
+Aug 20 19:02:42 christianjosesoriano rtkit-daemon[778]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 6 threads of 2 processes of 1 users.[0m
+Aug 20 19:02:42 christianjosesoriano rtkit-daemon[778]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 6 threads of 2 processes of 1 users.[0m
+Aug 20 19:02:42 christianjosesoriano rtkit-daemon[778]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 6 threads of 2 processes of 1 users.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 215.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.wlr' unit='xdg-desktop-portal-wlr.service' requested by ':1.16' (uid=1000 pid=1060 comm="/usr/libexec/xdg-desktop-portal")
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.11' (uid=1000 pid=953 comm="/usr/bin/pcmanfm --desktop --profile LXDE-pi")
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Starting xdg-desktop-portal-wlr.service - Portal service (wlroots implementation)...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 235.[0m
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Starting gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 254.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 254.[0m
+Aug 20 19:02:42 christianjosesoriano xdg-desktop-portal-wlr[1117]: 2025/08/20 19:02:42 [ERROR] - xdpw: Could not find render node
+Aug 20 19:02:42 christianjosesoriano xdg-desktop-portal-wlr[1117]: 2025/08/20 19:02:42 [ERROR] - xdpw: Could not find render node
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.freedesktop.impl.portal.desktop.wlr'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started xdg-desktop-portal-wlr.service - Portal service (wlroots implementation).
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 235.[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating service name='org.freedesktop.secrets' requested by ':1.16' (uid=1000 pid=1060 comm="/usr/libexec/xdg-desktop-portal")
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started gnome-keyring-daemon.service - GNOME Keyring daemon.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 274.[0m
+Aug 20 19:02:42 christianjosesoriano gnome-keyring-daemon[1126]: GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.freedesktop.secrets'
+Aug 20 19:02:42 christianjosesoriano gnome-keyring-daemon[1126]: [0;1;39m[0;1;31m[0;1;39mThe Secret Service was already initialized[0m
+Aug 20 19:02:42 christianjosesoriano gnome-keyring-daemon[1125]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdiscover_other_daemon: 1[0m
+Aug 20 19:02:42 christianjosesoriano org.freedesktop.secrets[1125]: GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+Aug 20 19:02:42 christianjosesoriano gnome-keyring-d[1126]: [0;1;39m[0;1;31m[0;1;39mThe Secret Service was already initialized[0m
+Aug 20 19:02:42 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.freedesktop.portal.Desktop'
+Aug 20 19:02:42 christianjosesoriano systemd[747]: Started xdg-desktop-portal.service - Portal service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 76.[0m
+Aug 20 19:02:44 christianjosesoriano NetworkManager[646]: <info>  [1755687764.2684] agent-manager: agent[65bf14bd23cb4431,:1.35/org.freedesktop.nm-applet/1000]: agent registered
+Aug 20 19:02:44 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.35' (uid=1000 pid=952 comm="/usr/bin/wf-panel-pi")
+Aug 20 19:02:44 christianjosesoriano systemd[1]: Starting packagekit.service - PackageKit Daemon...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit packagekit.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit packagekit.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1164.[0m
+Aug 20 19:02:44 christianjosesoriano PackageKit[1304]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Aug 20 19:02:44 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Aug 20 19:02:44 christianjosesoriano systemd[1]: Started packagekit.service - PackageKit Daemon.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit packagekit.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit packagekit.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1164.[0m
+Aug 20 19:02:44 christianjosesoriano PackageKit[1304]: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Aug 20 19:02:44 christianjosesoriano PackageKit[1304]: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Aug 20 19:02:48 christianjosesoriano PackageKit[1304]: [0;38;5;245m[0;1;31m[0;38;5;245mrefresh-cache transaction /37_dcbbbadb from uid 1000 finished with success after 4326ms[0m
+Aug 20 19:02:51 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:02:54 christianjosesoriano packagekitd[1304]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mpk_package_set_update_severity: assertion 'update_severity == PK_INFO_ENUM_UNKNOWN || update_severity == PK_INFO_ENUM_LOW || update_severity == PK_INFO_ENUM_NORMAL || update_severity == PK_INFO_ENUM_IMPORTANT || update_severity == PK_INFO_ENUM_CRITICAL' failed[0m
+Aug 20 19:02:54 christianjosesoriano packagekitd[1304]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mpk_package_set_update_severity: assertion 'update_severity == PK_INFO_ENUM_UNKNOWN || update_severity == PK_INFO_ENUM_LOW || update_severity == PK_INFO_ENUM_NORMAL || update_severity == PK_INFO_ENUM_IMPORTANT || update_severity == PK_INFO_ENUM_CRITICAL' failed[0m
+Aug 20 19:02:54 christianjosesoriano packagekitd[1304]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mpk_package_set_update_severity: assertion 'update_severity == PK_INFO_ENUM_UNKNOWN || update_severity == PK_INFO_ENUM_LOW || update_severity == PK_INFO_ENUM_NORMAL || update_severity == PK_INFO_ENUM_IMPORTANT || update_severity == PK_INFO_ENUM_CRITICAL' failed[0m
+Aug 20 19:02:54 christianjosesoriano PackageKit[1304]: [0;38;5;245m[0;1;31m[0;38;5;245mget-updates transaction /38_ebaadadc from uid 1000 finished with success after 5771ms[0m
+Aug 20 19:03:03 christianjosesoriano systemd[1]: systemd-fsckd.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-fsckd.service has successfully entered the 'dead' state.[0m
+Aug 20 19:03:05 christianjosesoriano systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-hostnamed.service has successfully entered the 'dead' state.[0m
+Aug 20 19:03:14 christianjosesoriano systemd-timesyncd[510]: Timed out waiting for reply from 222.127.1.27:123 (2.debian.pool.ntp.org).
+Aug 20 19:03:22 christianjosesoriano sshd[1160]: Accepted password for cj from 192.168.68.104 port 54092 ssh2
+Aug 20 19:03:22 christianjosesoriano sshd[1160]: pam_unix(sshd:session): session opened for user cj(uid=1000) by (uid=0)
+Aug 20 19:03:22 christianjosesoriano systemd-logind[543]: New session 4 of user cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 4 has been created for user cj[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 4 has been created for the user cj.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 1160.[0m
+Aug 20 19:03:22 christianjosesoriano systemd[1]: Started session-4.scope - Session 4 of User cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-4.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-4.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1248.[0m
+Aug 20 19:03:22 christianjosesoriano sshd[1160]: [0;38;5;245m[0;1;31m[0;38;5;245mpam_env(sshd:session): deprecated reading of user environment enabled[0m
+Aug 20 19:03:24 christianjosesoriano systemd-timesyncd[510]: Timed out waiting for reply from 222.127.1.25:123 (2.debian.pool.ntp.org).
+Aug 20 19:03:30 christianjosesoriano sshd[1690]: Received disconnect from 192.168.68.104 port 54092:11: disconnected by user
+Aug 20 19:03:30 christianjosesoriano sshd[1690]: Disconnected from user cj 192.168.68.104 port 54092
+Aug 20 19:03:30 christianjosesoriano sshd[1160]: pam_unix(sshd:session): session closed for user cj
+Aug 20 19:03:30 christianjosesoriano systemd-logind[543]: Session 4 logged out. Waiting for processes to exit.
+Aug 20 19:03:32 christianjosesoriano sshd[1832]: Accepted password for cj from 192.168.68.104 port 54120 ssh2
+Aug 20 19:03:32 christianjosesoriano sshd[1832]: pam_unix(sshd:session): session opened for user cj(uid=1000) by (uid=0)
+Aug 20 19:03:32 christianjosesoriano systemd-logind[543]: New session 5 of user cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 5 has been created for user cj[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 5 has been created for the user cj.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 1832.[0m
+Aug 20 19:03:32 christianjosesoriano systemd[1]: Started session-5.scope - Session 5 of User cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-5.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-5.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1331.[0m
+Aug 20 19:03:32 christianjosesoriano sshd[1832]: [0;38;5;245m[0;1;31m[0;38;5;245mpam_env(sshd:session): deprecated reading of user environment enabled[0m
+Aug 20 19:03:34 christianjosesoriano systemd-timesyncd[510]: Timed out waiting for reply from 222.127.1.19:123 (2.debian.pool.ntp.org).
+Aug 20 19:03:44 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.11' (uid=1000 pid=953 comm="/usr/bin/pcmanfm --desktop --profile LXDE-pi")
+Aug 20 19:03:44 christianjosesoriano systemd[747]: Starting gvfs-metadata.service - Virtual filesystem metadata service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 293.[0m
+Aug 20 19:03:44 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'org.gtk.vfs.Metadata'
+Aug 20 19:03:44 christianjosesoriano systemd[747]: Started gvfs-metadata.service - Virtual filesystem metadata service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 293.[0m
+Aug 20 19:03:45 christianjosesoriano systemd-timesyncd[510]: Timed out waiting for reply from [2405:8d40:f27:cd00:1620:c0:5bed:33c]:123 (2.debian.pool.ntp.org).
+Aug 20 19:03:52 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv6 no longer relevant for mDNS.
+Aug 20 19:03:52 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.7979] manager: rfkill: Wi-Fi hardware radio set disabled
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.7980] device (wlan0): state change: activated -> unavailable (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8211] dhcp4 (wlan0): canceled DHCP transaction
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8211] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8212] dhcp4 (wlan0): state changed no lease
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8217] dhcp6 (wlan0): canceled DHCP transaction
+Aug 20 19:03:52 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1414.[0m
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8218] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8218] dhcp6 (wlan0): state changed no lease
+Aug 20 19:03:52 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv4 no longer relevant for mDNS.
+Aug 20 19:03:52 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 19:03:52 christianjosesoriano avahi-daemon[524]: Withdrawing address record for fe80::f5d3:986d:2e85:1c6a on wlan0.
+Aug 20 19:03:52 christianjosesoriano avahi-daemon[524]: Withdrawing address record for 192.168.68.112 on wlan0.
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DISCONNECTED bssid=e8:48:b8:37:49:13 reason=3 locally_generated=1[0m
+Aug 20 19:03:52 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set default route setting: no
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 19:03:52 christianjosesoriano systemd-resolved[509]: wlan0: Bus client reset DNS server list.
+Aug 20 19:03:52 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1414.[0m
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8659] manager: NetworkManager state is now DISCONNECTED
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8704] audit: op="radio-control" arg="wireless-enabled:off" pid=952 uid=1000 result="success"
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8712] manager: rfkill: Wi-Fi now disabled by radio killswitch
+Aug 20 19:03:52 christianjosesoriano NetworkManager[646]: <info>  [1755687832.8731] device (p2p-dev-wlan0): state change: disconnected -> unavailable (reason 'supplicant-failed', sys-iface-state: 'managed')
+Aug 20 19:03:52 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0[0m
+Aug 20 19:03:52 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1422.[0m
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:03:52 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 19:03:52 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1422.[0m
+Aug 20 19:03:52 christianjosesoriano kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mwarning: `iwconfig' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211[0m
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:03:52 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=wlan0 disabled_11b_rates=0[0m
+Aug 20 19:03:55 christianjosesoriano systemd-timesyncd[510]: Timed out waiting for reply from [2606:4700:f1::123]:123 (2.debian.pool.ntp.org).
+Aug 20 19:03:55 christianjosesoriano sudo[2088]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/sbin/pppd /dev/serial0 115200 connect 'chat -v -f /etc/chatscripts/gprs' noauth defaultroute usepeerdns[0m
+Aug 20 19:03:55 christianjosesoriano sudo[2088]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:03:55 christianjosesoriano kernel: PPP generic driver version 2.4.2
+Aug 20 19:03:55 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mpppd 2.4.9 started by cj, uid 0[0m
+Aug 20 19:03:55 christianjosesoriano sudo[2088]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (BUSY)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (VOICE)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (NO CARRIER)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (NO DIALTONE)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (NO DIAL TONE)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (NO ANSWER)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (DELAYED)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (ERROR)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: abort on (+CGATT: 0)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: send (AT^M)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: timeout set to 12 seconds
+Aug 20 19:03:56 christianjosesoriano chat[2104]: expect (OK)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: AT^M^M
+Aug 20 19:03:56 christianjosesoriano chat[2104]: OK
+Aug 20 19:03:56 christianjosesoriano chat[2104]:  -- got it
+Aug 20 19:03:56 christianjosesoriano chat[2104]: send (ATH^M)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: expect (OK)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: ^M
+Aug 20 19:03:56 christianjosesoriano chat[2104]: ATH^M^M
+Aug 20 19:03:56 christianjosesoriano chat[2104]: OK
+Aug 20 19:03:56 christianjosesoriano chat[2104]:  -- got it
+Aug 20 19:03:56 christianjosesoriano chat[2104]: send (ATE1^M)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: expect (OK)
+Aug 20 19:03:56 christianjosesoriano chat[2104]: ^M
+Aug 20 19:03:56 christianjosesoriano chat[2104]: ATE1^M^M
+Aug 20 19:03:56 christianjosesoriano chat[2104]: OK
+Aug 20 19:03:56 christianjosesoriano chat[2104]:  -- got it
+Aug 20 19:03:56 christianjosesoriano chat[2104]: send (AT+CGDCONT=1,"IP","\T","",0,0^M)
+Aug 20 19:03:57 christianjosesoriano chat[2104]: expect (OK)
+Aug 20 19:03:57 christianjosesoriano chat[2104]: ^M
+Aug 20 19:03:57 christianjosesoriano chat[2104]: AT+CGDCONT=1,"IP","T","",0,0^M^M
+Aug 20 19:03:57 christianjosesoriano chat[2104]: OK
+Aug 20 19:03:57 christianjosesoriano chat[2104]:  -- got it
+Aug 20 19:03:57 christianjosesoriano chat[2104]: send (ATD*99#^M)
+Aug 20 19:03:57 christianjosesoriano chat[2104]: timeout set to 22 seconds
+Aug 20 19:03:57 christianjosesoriano chat[2104]: expect (CONNECT)
+Aug 20 19:03:57 christianjosesoriano chat[2104]: ^M
+Aug 20 19:03:57 christianjosesoriano chat[2104]: ATD*99#^M^M
+Aug 20 19:03:57 christianjosesoriano chat[2104]: CONNECT
+Aug 20 19:03:57 christianjosesoriano chat[2104]:  -- got it
+Aug 20 19:03:57 christianjosesoriano chat[2104]: send (^M)
+Aug 20 19:03:57 christianjosesoriano pppd[2094]: Serial connection established.
+Aug 20 19:03:57 christianjosesoriano pppd[2094]: Using interface ppp0
+Aug 20 19:03:57 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mConnect: ppp0 <--> /dev/serial0[0m
+Aug 20 19:03:57 christianjosesoriano NetworkManager[646]: <info>  [1755687837.2879] manager: (ppp0): new Ppp device (/org/freedesktop/NetworkManager/Devices/5)
+Aug 20 19:03:57 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 19:03:58 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mPAP authentication succeeded[0m
+Aug 20 19:03:58 christianjosesoriano kernel: PPP BSD Compression module registered
+Aug 20 19:03:58 christianjosesoriano kernel: PPP Deflate Compression module registered
+Aug 20 19:03:59 christianjosesoriano NetworkManager[646]: <info>  [1755687839.1019] device (ppp0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 19:03:59 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mlocal  IP address 10.96.93.160[0m
+Aug 20 19:03:59 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mremote IP address 192.168.254.254[0m
+Aug 20 19:03:59 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mprimary   DNS address 10.151.151.3[0m
+Aug 20 19:03:59 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39msecondary DNS address 10.151.151.36[0m
+Aug 20 19:03:59 christianjosesoriano NetworkManager[646]: <info>  [1755687839.1042] device (ppp0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'external')
+Aug 20 19:03:59 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.33' (uid=1000 pid=2121 comm="mousepad file:///home/cj/Desktop/smartstick/SmartS")
+Aug 20 19:03:59 christianjosesoriano systemd[747]: Starting dconf.service - User preferences database...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 313.[0m
+Aug 20 19:03:59 christianjosesoriano dbus-daemon[777]: [session uid=1000 pid=777] Successfully activated service 'ca.desrt.dconf'
+Aug 20 19:03:59 christianjosesoriano systemd[747]: Started dconf.service - User preferences database.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 313.[0m
+Aug 20 19:04:02 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.3379] manager: rfkill: Wi-Fi hardware radio set enabled
+Aug 20 19:05:22 christianjosesoriano kernel: brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.3453] audit: op="radio-control" arg="wireless-enabled:on" pid=952 uid=1000 result="success"
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.3488] manager: rfkill: Wi-Fi now enabled by radio killswitch
+Aug 20 19:05:22 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1502.[0m
+Aug 20 19:05:22 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1502.[0m
+Aug 20 19:05:22 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mnl80211: kernel reports: Registration to specific type not supported[0m
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4606] device (wlan0): supplicant interface state: internal-starting -> disconnected
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4608] device (p2p-dev-wlan0): state change: unavailable -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4637] Wi-Fi P2P device controlled by interface wlan0 created
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4678] manager: (p2p-dev-wlan0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/6)
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4689] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4734] device (wlan0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Aug 20 19:05:22 christianjosesoriano NetworkManager[646]: <info>  [1755687922.4773] device (p2p-dev-wlan0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0316] policy: auto-activating connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0326] device (wlan0): Activation: starting connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0329] device (wlan0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0334] manager: NetworkManager state is now CONNECTING
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0341] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0348] device (wlan0): Activation: (wifi) access point 'preconfigured' has security, but secrets are required.
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0349] device (wlan0): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0352] sup-iface[a93b5b220930e775,1,wlan0]: wps: type pbc start...
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0383] device (wlan0): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0393] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0404] device (wlan0): Activation: (wifi) connection 'preconfigured' has security, and secrets exist.  No new secrets needed.
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0409] Config: added 'ssid' value 'tp-link'
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0412] Config: added 'scan_ssid' value '1'
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0412] Config: added 'bgscan' value 'simple:30:-70:86400'
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0413] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK'
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0413] Config: added 'psk' value '<hidden>'
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPS-CANCEL[0m
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Trying to associate with e8:48:b8:37:49:13 (SSID='tp-link' freq=5220 MHz)[0m
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0765] device (wlan0): supplicant interface state: disconnected -> associating
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.0766] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> associating
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Associated with e8:48:b8:37:49:13[0m
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0[0m
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=US[0m
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2442] device (wlan0): supplicant interface state: associating -> 4way_handshake
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2443] device (p2p-dev-wlan0): supplicant management interface state: associating -> 4way_handshake
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPA: Key negotiation completed with e8:48:b8:37:49:13 [PTK=CCMP GTK=CCMP][0m
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-CONNECTED - Connection to e8:48:b8:37:49:13 completed [id=0 id_str=][0m
+Aug 20 19:05:25 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mbgscan simple: Failed to enable signal strength monitoring[0m
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2601] device (wlan0): supplicant interface state: 4way_handshake -> completed
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2602] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "tp-link"
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2603] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2605] device (wlan0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:25 christianjosesoriano NetworkManager[646]: <info>  [1755687925.2623] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:05:25 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 19:05:25 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv6 for mDNS.
+Aug 20 19:05:25 christianjosesoriano avahi-daemon[524]: Registering new address record for fe80::f5d3:986d:2e85:1c6a on wlan0.*.
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.2853] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.2871] policy: set 'preconfigured' (wlan0) as default for IPv4 routing and DNS
+Aug 20 19:05:27 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 19:05:27 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv4 for mDNS.
+Aug 20 19:05:27 christianjosesoriano avahi-daemon[524]: Registering new address record for 192.168.68.112 on wlan0.IPv4.
+Aug 20 19:05:27 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set default route setting: yes
+Aug 20 19:05:27 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set DNS server list to: 192.168.1.1, 192.168.68.1
+Aug 20 19:05:27 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.3202] device (wlan0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:27 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1510.[0m
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.3650] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.3665] policy: set 'preconfigured' (wlan0) as default for IPv6 routing and DNS
+Aug 20 19:05:27 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 19:05:27 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1510.[0m
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.3936] device (wlan0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:27 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.3942] device (wlan0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.3953] manager: NetworkManager state is now CONNECTED_SITE
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.4037] device (wlan0): Activation: successful, device activated.
+Aug 20 19:05:27 christianjosesoriano NetworkManager[646]: <info>  [1755687927.4054] manager: NetworkManager state is now CONNECTED_GLOBAL
+Aug 20 19:05:30 christianjosesoriano sshd[2401]: Accepted password for cj from 192.168.68.104 port 54177 ssh2
+Aug 20 19:05:30 christianjosesoriano sshd[2401]: pam_unix(sshd:session): session opened for user cj(uid=1000) by (uid=0)
+Aug 20 19:05:30 christianjosesoriano systemd-logind[543]: New session 6 of user cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 6 has been created for user cj[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 6 has been created for the user cj.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 2401.[0m
+Aug 20 19:05:30 christianjosesoriano systemd[1]: Started session-6.scope - Session 6 of User cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-6.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-6.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1590.[0m
+Aug 20 19:05:30 christianjosesoriano sshd[2401]: [0;38;5;245m[0;1;31m[0;38;5;245mpam_env(sshd:session): deprecated reading of user environment enabled[0m
+Aug 20 19:05:48 christianjosesoriano systemd-resolved[509]: Clock change detected. Flushing caches.
+Aug 20 19:05:48 christianjosesoriano systemd-timesyncd[510]: Contacted time server 58.71.12.13:123 (0.debian.pool.ntp.org).
+Aug 20 19:05:48 christianjosesoriano systemd-timesyncd[510]: Initial clock synchronization to Wed 2025-08-20 19:05:48.232310 PST.
+[0;38;5;245m░░ [0m[0;32mSubject: Initial clock synchronization[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mFor the first time during the current boot an NTP synchronization has been[0m
+[0;38;5;245m░░[0m [0;32macquired and the local system clock adjustment has been initiated.[0m
+Aug 20 19:05:49 christianjosesoriano sudo[2505]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/poff[0m
+Aug 20 19:05:49 christianjosesoriano sudo[2505]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:05:49 christianjosesoriano pppd[2094]: Terminating on signal 15
+Aug 20 19:05:49 christianjosesoriano pppd[2094]: Connect time 1.6 minutes.
+Aug 20 19:05:49 christianjosesoriano pppd[2094]: Sent 1374 bytes, received 916 bytes.
+Aug 20 19:05:49 christianjosesoriano NetworkManager[646]: <info>  [1755687949.0782] device (ppp0): state change: disconnected -> unmanaged (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 19:05:49 christianjosesoriano sudo[2505]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:05:49 christianjosesoriano pppd[2094]: [0;1;39m[0;1;31m[0;1;39mConnection terminated.[0m
+Aug 20 19:05:49 christianjosesoriano avahi-daemon[524]: Withdrawing workstation service for ppp0.
+Aug 20 19:05:50 christianjosesoriano pppd[2094]: Exit.
+Aug 20 19:05:53 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:08:15 christianjosesoriano PackageKit[1304]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon quit[0m
+Aug 20 19:08:15 christianjosesoriano systemd[1]: packagekit.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit packagekit.service has successfully entered the 'dead' state.[0m
+Aug 20 19:08:15 christianjosesoriano systemd[1]: packagekit.service: Consumed 7.287s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit packagekit.service completed and consumed the indicated resources.[0m
+Aug 20 19:17:01 christianjosesoriano CRON[3503]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Aug 20 19:17:01 christianjosesoriano CRON[3504]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 20 19:17:01 christianjosesoriano CRON[3503]: pam_unix(cron:session): session closed for user root
+Aug 20 19:17:45 christianjosesoriano systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-tmpfiles-clean.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-tmpfiles-clean.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1673.[0m
+Aug 20 19:17:45 christianjosesoriano systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-tmpfiles-clean.service has successfully entered the 'dead' state.[0m
+Aug 20 19:17:45 christianjosesoriano systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-tmpfiles-clean.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-tmpfiles-clean.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1673.[0m
+Aug 20 19:17:45 christianjosesoriano systemd[1]: run-credentials-systemd\x2dtmpfiles\x2dclean.service.mount: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit run-credentials-systemd\x2dtmpfiles\x2dclean.service.mount has successfully entered the 'dead' state.[0m
+Aug 20 19:22:06 christianjosesoriano sshd[1832]: pam_unix(sshd:session): session closed for user cj
+Aug 20 19:22:06 christianjosesoriano systemd-logind[543]: Session 5 logged out. Waiting for processes to exit.
+Aug 20 19:23:45 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv6 no longer relevant for mDNS.
+Aug 20 19:23:45 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4366] manager: rfkill: Wi-Fi hardware radio set disabled
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4367] device (wlan0): state change: activated -> unavailable (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4378] dhcp4 (wlan0): canceled DHCP transaction
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4379] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4379] dhcp4 (wlan0): state changed no lease
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4394] dhcp6 (wlan0): canceled DHCP transaction
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4395] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4396] dhcp6 (wlan0): state changed no lease
+Aug 20 19:23:45 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1678.[0m
+Aug 20 19:23:45 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv4 no longer relevant for mDNS.
+Aug 20 19:23:45 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 19:23:45 christianjosesoriano avahi-daemon[524]: Withdrawing address record for fe80::f5d3:986d:2e85:1c6a on wlan0.
+Aug 20 19:23:45 christianjosesoriano avahi-daemon[524]: Withdrawing address record for 192.168.68.112 on wlan0.
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DISCONNECTED bssid=e8:48:b8:37:49:13 reason=3 locally_generated=1[0m
+Aug 20 19:23:45 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1678.[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 19:23:45 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set default route setting: no
+Aug 20 19:23:45 christianjosesoriano systemd-resolved[509]: wlan0: Bus client reset DNS server list.
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.4966] manager: NetworkManager state is now DISCONNECTED
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.5001] audit: op="radio-control" arg="wireless-enabled:off" pid=952 uid=1000 result="success"
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0[0m
+Aug 20 19:23:45 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.5009] manager: rfkill: Wi-Fi now disabled by radio killswitch
+Aug 20 19:23:45 christianjosesoriano NetworkManager[646]: <info>  [1755689025.5034] device (p2p-dev-wlan0): state change: disconnected -> unavailable (reason 'supplicant-failed', sys-iface-state: 'managed')
+Aug 20 19:23:45 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1686.[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:23:45 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 19:23:45 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1686.[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:23:45 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=wlan0 disabled_11b_rates=0[0m
+Aug 20 19:23:50 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 19:23:55 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:23:57 christianjosesoriano sudo[4206]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/sbin/pppd /dev/serial0 115200 connect 'chat -v -f /etc/chatscripts/gprs' noauth defaultroute usepeerdns[0m
+Aug 20 19:23:57 christianjosesoriano sudo[4206]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:23:57 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mpppd 2.4.9 started by cj, uid 0[0m
+Aug 20 19:23:57 christianjosesoriano sudo[4206]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (BUSY)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (VOICE)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (NO CARRIER)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (NO DIALTONE)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (NO DIAL TONE)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (NO ANSWER)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (DELAYED)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (ERROR)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: abort on (+CGATT: 0)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: send (AT^M)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: timeout set to 12 seconds
+Aug 20 19:23:58 christianjosesoriano chat[4237]: expect (OK)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: AT^M^M
+Aug 20 19:23:58 christianjosesoriano chat[4237]: OK
+Aug 20 19:23:58 christianjosesoriano chat[4237]:  -- got it
+Aug 20 19:23:58 christianjosesoriano chat[4237]: send (ATH^M)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: expect (OK)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: ^M
+Aug 20 19:23:58 christianjosesoriano chat[4237]: ATH^M^M
+Aug 20 19:23:58 christianjosesoriano chat[4237]: OK
+Aug 20 19:23:58 christianjosesoriano chat[4237]:  -- got it
+Aug 20 19:23:58 christianjosesoriano chat[4237]: send (ATE1^M)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: expect (OK)
+Aug 20 19:23:58 christianjosesoriano chat[4237]: ^M
+Aug 20 19:23:58 christianjosesoriano chat[4237]: ATE1^M^M
+Aug 20 19:23:58 christianjosesoriano chat[4237]: OK
+Aug 20 19:23:58 christianjosesoriano chat[4237]:  -- got it
+Aug 20 19:23:58 christianjosesoriano chat[4237]: send (AT+CGDCONT=1,"IP","\T","",0,0^M)
+Aug 20 19:23:58 christianjosesoriano systemd[747]: Started app-org.chromium.Chromium-4109.scope.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 332.[0m
+Aug 20 19:23:59 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.56' (uid=1000 pid=4109 comm="/usr/lib/chromium/chromium --force-renderer-access")
+Aug 20 19:23:59 christianjosesoriano systemd[1]: Starting upower.service - Daemon for power management...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit upower.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit upower.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1766.[0m
+Aug 20 19:23:59 christianjosesoriano xdg-desktop-por[1060]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mBackend call failed: Collection login doesn't exist[0m
+Aug 20 19:23:59 christianjosesoriano chat[4237]: expect (OK)
+Aug 20 19:23:59 christianjosesoriano chat[4237]: ^M
+Aug 20 19:23:59 christianjosesoriano chat[4237]: AT+CGDCONT=1,"IP","T","",0,0^M^M
+Aug 20 19:23:59 christianjosesoriano chat[4237]: OK
+Aug 20 19:23:59 christianjosesoriano chat[4237]:  -- got it
+Aug 20 19:23:59 christianjosesoriano chat[4237]: send (ATD*99#^M)
+Aug 20 19:23:59 christianjosesoriano chat[4237]: timeout set to 22 seconds
+Aug 20 19:23:59 christianjosesoriano chat[4237]: expect (CONNECT)
+Aug 20 19:23:59 christianjosesoriano chat[4237]: ^M
+Aug 20 19:23:59 christianjosesoriano chat[4237]: ATD*99#^M^M
+Aug 20 19:23:59 christianjosesoriano chat[4237]: CONNECT
+Aug 20 19:23:59 christianjosesoriano chat[4237]:  -- got it
+Aug 20 19:23:59 christianjosesoriano chat[4237]: send (^M)
+Aug 20 19:23:59 christianjosesoriano pppd[4210]: Serial connection established.
+Aug 20 19:23:59 christianjosesoriano pppd[4210]: Using interface ppp0
+Aug 20 19:23:59 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mConnect: ppp0 <--> /dev/serial0[0m
+Aug 20 19:23:59 christianjosesoriano NetworkManager[646]: <info>  [1755689039.3381] manager: (ppp0): new Ppp device (/org/freedesktop/NetworkManager/Devices/7)
+Aug 20 19:23:59 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.UPower'
+Aug 20 19:23:59 christianjosesoriano systemd[1]: Started upower.service - Daemon for power management.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit upower.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit upower.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1766.[0m
+Aug 20 19:24:00 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mPAP authentication succeeded[0m
+Aug 20 19:24:01 christianjosesoriano NetworkManager[646]: <info>  [1755689041.1075] device (ppp0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 19:24:01 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mlocal  IP address 10.124.206.200[0m
+Aug 20 19:24:01 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mremote IP address 192.168.254.254[0m
+Aug 20 19:24:01 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mprimary   DNS address 10.151.151.1[0m
+Aug 20 19:24:01 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39msecondary DNS address 10.151.151.22[0m
+Aug 20 19:24:01 christianjosesoriano NetworkManager[646]: <info>  [1755689041.1156] device (ppp0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'external')
+Aug 20 19:24:27 christianjosesoriano chrome[4109]: [4109:4144:0820/192427.836505:INFO:chrome/browser/extensions/extension_garbage_collector.cc:184] Garbage collection for extensions on file thread is complete.
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.1018] manager: rfkill: Wi-Fi hardware radio set enabled
+Aug 20 19:24:39 christianjosesoriano kernel: brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.1107] audit: op="radio-control" arg="wireless-enabled:on" pid=952 uid=1000 result="success"
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.1124] manager: rfkill: Wi-Fi now enabled by radio killswitch
+Aug 20 19:24:39 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1846.[0m
+Aug 20 19:24:39 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1846.[0m
+Aug 20 19:24:39 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mnl80211: kernel reports: Registration to specific type not supported[0m
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2117] device (wlan0): supplicant interface state: internal-starting -> disconnected
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2118] device (p2p-dev-wlan0): state change: unavailable -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2129] Wi-Fi P2P device controlled by interface wlan0 created
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2136] manager: (p2p-dev-wlan0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/8)
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2143] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2152] device (wlan0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Aug 20 19:24:39 christianjosesoriano NetworkManager[646]: <info>  [1755689079.2187] device (p2p-dev-wlan0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7761] policy: auto-activating connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7775] device (wlan0): Activation: starting connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7777] device (wlan0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7789] manager: NetworkManager state is now CONNECTING
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7797] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7810] device (wlan0): Activation: (wifi) access point 'preconfigured' has security, but secrets are required.
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7811] device (wlan0): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7818] sup-iface[de5a63e754b75c2a,2,wlan0]: wps: type pbc start...
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7857] device (wlan0): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7874] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7886] device (wlan0): Activation: (wifi) connection 'preconfigured' has security, and secrets exist.  No new secrets needed.
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7887] Config: added 'ssid' value 'tp-link'
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7887] Config: added 'scan_ssid' value '1'
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7888] Config: added 'bgscan' value 'simple:30:-70:86400'
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7889] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK'
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.7889] Config: added 'psk' value '<hidden>'
+Aug 20 19:24:41 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPS-CANCEL[0m
+Aug 20 19:24:41 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Trying to associate with e8:48:b8:37:49:13 (SSID='tp-link' freq=5220 MHz)[0m
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.8273] device (wlan0): supplicant interface state: disconnected -> associating
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.8274] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> associating
+Aug 20 19:24:41 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Associated with e8:48:b8:37:49:13[0m
+Aug 20 19:24:41 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0[0m
+Aug 20 19:24:41 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=US[0m
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.9966] device (wlan0): supplicant interface state: associating -> 4way_handshake
+Aug 20 19:24:41 christianjosesoriano NetworkManager[646]: <info>  [1755689081.9967] device (p2p-dev-wlan0): supplicant management interface state: associating -> 4way_handshake
+Aug 20 19:24:42 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPA: Key negotiation completed with e8:48:b8:37:49:13 [PTK=CCMP GTK=CCMP][0m
+Aug 20 19:24:42 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-CONNECTED - Connection to e8:48:b8:37:49:13 completed [id=0 id_str=][0m
+Aug 20 19:24:42 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mbgscan simple: Failed to enable signal strength monitoring[0m
+Aug 20 19:24:42 christianjosesoriano NetworkManager[646]: <info>  [1755689082.0113] device (wlan0): supplicant interface state: 4way_handshake -> completed
+Aug 20 19:24:42 christianjosesoriano NetworkManager[646]: <info>  [1755689082.0114] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "tp-link"
+Aug 20 19:24:42 christianjosesoriano NetworkManager[646]: <info>  [1755689082.0114] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+Aug 20 19:24:42 christianjosesoriano NetworkManager[646]: <info>  [1755689082.0117] device (wlan0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:42 christianjosesoriano NetworkManager[646]: <info>  [1755689082.0126] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:24:42 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 19:24:42 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv6 for mDNS.
+Aug 20 19:24:42 christianjosesoriano avahi-daemon[524]: Registering new address record for fe80::f5d3:986d:2e85:1c6a on wlan0.*.
+Aug 20 19:24:43 christianjosesoriano NetworkManager[646]: <info>  [1755689083.4996] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:24:43 christianjosesoriano NetworkManager[646]: <info>  [1755689083.5005] policy: set 'preconfigured' (wlan0) as default for IPv6 routing and DNS
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.0349] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.0359] policy: set 'preconfigured' (wlan0) as default for IPv4 routing and DNS
+Aug 20 19:24:44 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 19:24:44 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv4 for mDNS.
+Aug 20 19:24:44 christianjosesoriano avahi-daemon[524]: Registering new address record for 192.168.68.112 on wlan0.IPv4.
+Aug 20 19:24:44 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set default route setting: yes
+Aug 20 19:24:44 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set DNS server list to: 192.168.1.1, 192.168.68.1
+Aug 20 19:24:44 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.0581] device (wlan0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:44 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1854.[0m
+Aug 20 19:24:44 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 19:24:44 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1854.[0m
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.1046] device (wlan0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.1050] device (wlan0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.1058] manager: NetworkManager state is now CONNECTED_SITE
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.1110] device (wlan0): Activation: successful, device activated.
+Aug 20 19:24:44 christianjosesoriano NetworkManager[646]: <info>  [1755689084.1122] manager: NetworkManager state is now CONNECTED_GLOBAL
+Aug 20 19:24:44 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 19:24:46 christianjosesoriano sudo[4499]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/poff[0m
+Aug 20 19:24:46 christianjosesoriano sudo[4499]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:24:46 christianjosesoriano pppd[4210]: Terminating on signal 15
+Aug 20 19:24:46 christianjosesoriano pppd[4210]: Connect time 0.8 minutes.
+Aug 20 19:24:46 christianjosesoriano pppd[4210]: Sent 674 bytes, received 336 bytes.
+Aug 20 19:24:46 christianjosesoriano NetworkManager[646]: <info>  [1755689086.6633] device (ppp0): state change: disconnected -> unmanaged (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 19:24:46 christianjosesoriano sudo[4499]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:24:46 christianjosesoriano pppd[4210]: [0;1;39m[0;1;31m[0;1;39mConnection terminated.[0m
+Aug 20 19:24:46 christianjosesoriano avahi-daemon[524]: Withdrawing workstation service for ppp0.
+Aug 20 19:24:47 christianjosesoriano pppd[4210]: Exit.
+Aug 20 19:24:49 christianjosesoriano systemd[1]: session-5.scope: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-5.scope has successfully entered the 'dead' state.[0m
+Aug 20 19:24:49 christianjosesoriano systemd[1]: session-5.scope: Consumed 1.596s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-5.scope completed and consumed the indicated resources.[0m
+Aug 20 19:24:49 christianjosesoriano systemd-logind[543]: Removed session 5.
+[0;38;5;245m░░ [0m[0;32mSubject: Session 5 has been terminated[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA session with the ID 5 has been terminated.[0m
+Aug 20 19:24:54 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:28:29 christianjosesoriano kernel: usb 1-1.1: new low-speed USB device number 7 using xhci_hcd
+Aug 20 19:28:29 christianjosesoriano kernel: usb 1-1.1: New USB device found, idVendor=258a, idProduct=0001, bcdDevice= 1.00
+Aug 20 19:28:29 christianjosesoriano kernel: usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 20 19:28:29 christianjosesoriano kernel: usb 1-1.1: Product: USB KEYBOARD
+Aug 20 19:28:29 christianjosesoriano kernel: usb 1-1.1: Manufacturer: SINO WEALTH
+Aug 20 19:28:29 christianjosesoriano kernel: input: SINO WEALTH USB KEYBOARD as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:258A:0001.0003/input/input6
+Aug 20 19:28:29 christianjosesoriano kernel: hid-generic 0003:258A:0001.0003: input,hidraw2: USB HID v1.10 Keyboard [SINO WEALTH USB KEYBOARD] on usb-0000:01:00.0-1.1/input0
+Aug 20 19:28:29 christianjosesoriano kernel: input: SINO WEALTH USB KEYBOARD System Control as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:258A:0001.0004/input/input7
+Aug 20 19:28:29 christianjosesoriano kernel: input: SINO WEALTH USB KEYBOARD Consumer Control as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:258A:0001.0004/input/input8
+Aug 20 19:28:29 christianjosesoriano kernel: hid-generic 0003:258A:0001.0004: input,hiddev96,hidraw3: USB HID v1.10 Device [SINO WEALTH USB KEYBOARD] on usb-0000:01:00.0-1.1/input1
+Aug 20 19:28:29 christianjosesoriano mtp-probe[4887]: checking bus 1, device 7: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Aug 20 19:28:29 christianjosesoriano mtp-probe[4887]: bus: 1, device: 7 was not an MTP device
+Aug 20 19:28:29 christianjosesoriano (udev-worker)[4888]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mevent7: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.[0m
+Aug 20 19:28:29 christianjosesoriano systemd-logind[543]: Watching system buttons on /dev/input/event7 (SINO WEALTH USB KEYBOARD System Control)
+Aug 20 19:28:29 christianjosesoriano (udev-worker)[4898]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mevent6: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.[0m
+Aug 20 19:28:29 christianjosesoriano (udev-worker)[4892]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mevent8: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.[0m
+Aug 20 19:28:29 christianjosesoriano systemd-logind[543]: Watching system buttons on /dev/input/event6 (SINO WEALTH USB KEYBOARD)
+Aug 20 19:28:29 christianjosesoriano mtp-probe[4911]: checking bus 1, device 7: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Aug 20 19:28:29 christianjosesoriano mtp-probe[4911]: bus: 1, device: 7 was not an MTP device
+Aug 20 19:28:50 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv6 no longer relevant for mDNS.
+Aug 20 19:28:50 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4605] manager: rfkill: Wi-Fi hardware radio set disabled
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4606] device (wlan0): state change: activated -> unavailable (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DISCONNECTED bssid=e8:48:b8:37:49:13 reason=3 locally_generated=1[0m
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4836] dhcp4 (wlan0): canceled DHCP transaction
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4837] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4837] dhcp4 (wlan0): state changed no lease
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4843] dhcp6 (wlan0): canceled DHCP transaction
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4843] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.4843] dhcp6 (wlan0): state changed no lease
+Aug 20 19:28:50 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1934.[0m
+Aug 20 19:28:50 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv4 no longer relevant for mDNS.
+Aug 20 19:28:50 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 19:28:50 christianjosesoriano avahi-daemon[524]: Withdrawing address record for fe80::f5d3:986d:2e85:1c6a on wlan0.
+Aug 20 19:28:50 christianjosesoriano avahi-daemon[524]: Withdrawing address record for 192.168.68.112 on wlan0.
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 19:28:50 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set default route setting: no
+Aug 20 19:28:50 christianjosesoriano systemd-resolved[509]: wlan0: Bus client reset DNS server list.
+Aug 20 19:28:50 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1934.[0m
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.5646] manager: NetworkManager state is now DISCONNECTED
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0[0m
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.5698] audit: op="radio-control" arg="wireless-enabled:off" pid=952 uid=1000 result="success"
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.5705] manager: rfkill: Wi-Fi now disabled by radio killswitch
+Aug 20 19:28:50 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 19:28:50 christianjosesoriano NetworkManager[646]: <info>  [1755689330.5733] device (p2p-dev-wlan0): state change: disconnected -> unavailable (reason 'supplicant-failed', sys-iface-state: 'managed')
+Aug 20 19:28:50 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1942.[0m
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:28:50 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 19:28:50 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1942.[0m
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 19:28:50 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=wlan0 disabled_11b_rates=0[0m
+Aug 20 19:28:55 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 19:29:00 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:29:02 christianjosesoriano sudo[5011]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/sbin/pppd /dev/serial0 115200 connect 'chat -v -f /etc/chatscripts/gprs' noauth defaultroute usepeerdns[0m
+Aug 20 19:29:02 christianjosesoriano sudo[5011]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:29:02 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mpppd 2.4.9 started by cj, uid 0[0m
+Aug 20 19:29:02 christianjosesoriano sudo[5011]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (BUSY)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (VOICE)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (NO CARRIER)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (NO DIALTONE)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (NO DIAL TONE)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (NO ANSWER)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (DELAYED)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (ERROR)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: abort on (+CGATT: 0)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: send (AT^M)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: timeout set to 12 seconds
+Aug 20 19:29:03 christianjosesoriano chat[5023]: expect (OK)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: AT^M^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: OK
+Aug 20 19:29:03 christianjosesoriano chat[5023]:  -- got it
+Aug 20 19:29:03 christianjosesoriano chat[5023]: send (ATH^M)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: expect (OK)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ATH^M^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: OK
+Aug 20 19:29:03 christianjosesoriano chat[5023]:  -- got it
+Aug 20 19:29:03 christianjosesoriano chat[5023]: send (ATE1^M)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: expect (OK)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ATE1^M^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: OK
+Aug 20 19:29:03 christianjosesoriano chat[5023]:  -- got it
+Aug 20 19:29:03 christianjosesoriano chat[5023]: send (AT+CGDCONT=1,"IP","\T","",0,0^M)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: expect (OK)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: AT+CGDCONT=1,"IP","T","",0,0^M^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: OK
+Aug 20 19:29:03 christianjosesoriano chat[5023]:  -- got it
+Aug 20 19:29:03 christianjosesoriano chat[5023]: send (ATD*99#^M)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: timeout set to 22 seconds
+Aug 20 19:29:03 christianjosesoriano chat[5023]: expect (CONNECT)
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: ATD*99#^M^M
+Aug 20 19:29:03 christianjosesoriano chat[5023]: CONNECT
+Aug 20 19:29:03 christianjosesoriano chat[5023]:  -- got it
+Aug 20 19:29:03 christianjosesoriano chat[5023]: send (^M)
+Aug 20 19:29:03 christianjosesoriano pppd[5015]: Serial connection established.
+Aug 20 19:29:03 christianjosesoriano pppd[5015]: Using interface ppp0
+Aug 20 19:29:03 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mConnect: ppp0 <--> /dev/serial0[0m
+Aug 20 19:29:03 christianjosesoriano NetworkManager[646]: <info>  [1755689343.5924] manager: (ppp0): new Ppp device (/org/freedesktop/NetworkManager/Devices/9)
+Aug 20 19:29:04 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mPAP authentication succeeded[0m
+Aug 20 19:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755689345.4104] device (ppp0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 19:29:05 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mlocal  IP address 10.144.34.152[0m
+Aug 20 19:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755689345.4145] device (ppp0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'external')
+Aug 20 19:29:05 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mremote IP address 192.168.254.254[0m
+Aug 20 19:29:05 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mprimary   DNS address 10.151.151.3[0m
+Aug 20 19:29:05 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39msecondary DNS address 10.151.151.36[0m
+Aug 20 19:30:02 christianjosesoriano sudo[5188]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/4 ; PWD=/home/cj ; USER=root ; COMMAND=/usr/bin/nano /etc/resolv.conf[0m
+Aug 20 19:30:02 christianjosesoriano sudo[5188]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.0865] manager: rfkill: Wi-Fi hardware radio set enabled
+Aug 20 19:30:44 christianjosesoriano kernel: brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.0949] audit: op="radio-control" arg="wireless-enabled:on" pid=952 uid=1000 result="success"
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.0979] manager: rfkill: Wi-Fi now enabled by radio killswitch
+Aug 20 19:30:44 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2022.[0m
+Aug 20 19:30:44 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2022.[0m
+Aug 20 19:30:44 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mnl80211: kernel reports: Registration to specific type not supported[0m
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1705] device (wlan0): supplicant interface state: internal-starting -> disconnected
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1707] device (p2p-dev-wlan0): state change: unavailable -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1729] Wi-Fi P2P device controlled by interface wlan0 created
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1737] manager: (p2p-dev-wlan0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/10)
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1742] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1752] device (wlan0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Aug 20 19:30:44 christianjosesoriano NetworkManager[646]: <info>  [1755689444.1768] device (p2p-dev-wlan0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7313] policy: auto-activating connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7325] device (wlan0): Activation: starting connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7327] device (wlan0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7333] manager: NetworkManager state is now CONNECTING
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7338] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7345] device (wlan0): Activation: (wifi) access point 'preconfigured' has security, but secrets are required.
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7346] device (wlan0): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7350] sup-iface[500cf66c1a19bcc8,3,wlan0]: wps: type pbc start...
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7384] device (wlan0): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7392] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7408] device (wlan0): Activation: (wifi) connection 'preconfigured' has security, and secrets exist.  No new secrets needed.
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7409] Config: added 'ssid' value 'tp-link'
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7409] Config: added 'scan_ssid' value '1'
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7410] Config: added 'bgscan' value 'simple:30:-70:86400'
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7410] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK'
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7410] Config: added 'psk' value '<hidden>'
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPS-CANCEL[0m
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Trying to associate with e8:48:b8:37:49:13 (SSID='tp-link' freq=5220 MHz)[0m
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7801] device (wlan0): supplicant interface state: disconnected -> associating
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.7802] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> associating
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Associated with e8:48:b8:37:49:13[0m
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0[0m
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=US[0m
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9723] device (wlan0): supplicant interface state: associating -> 4way_handshake
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9724] device (p2p-dev-wlan0): supplicant management interface state: associating -> 4way_handshake
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPA: Key negotiation completed with e8:48:b8:37:49:13 [PTK=CCMP GTK=CCMP][0m
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-CONNECTED - Connection to e8:48:b8:37:49:13 completed [id=0 id_str=][0m
+Aug 20 19:30:46 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mbgscan simple: Failed to enable signal strength monitoring[0m
+Aug 20 19:30:46 christianjosesoriano sudo[5188]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9949] device (wlan0): supplicant interface state: 4way_handshake -> completed
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9950] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "tp-link"
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9951] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9954] device (wlan0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:46 christianjosesoriano NetworkManager[646]: <info>  [1755689446.9989] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:30:47 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 19:30:47 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv6 for mDNS.
+Aug 20 19:30:47 christianjosesoriano avahi-daemon[524]: Registering new address record for fe80::f5d3:986d:2e85:1c6a on wlan0.*.
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.0235] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.0254] policy: set 'preconfigured' (wlan0) as default for IPv4 routing and DNS
+Aug 20 19:30:47 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 19:30:47 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv4 for mDNS.
+Aug 20 19:30:47 christianjosesoriano avahi-daemon[524]: Registering new address record for 192.168.68.112 on wlan0.IPv4.
+Aug 20 19:30:47 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set default route setting: yes
+Aug 20 19:30:47 christianjosesoriano systemd-resolved[509]: wlan0: Bus client set DNS server list to: 192.168.1.1, 192.168.68.1
+Aug 20 19:30:47 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.0600] device (wlan0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:47 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2030.[0m
+Aug 20 19:30:47 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 19:30:47 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2030.[0m
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.1125] device (wlan0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.1130] device (wlan0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.1139] manager: NetworkManager state is now CONNECTED_SITE
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.1243] device (wlan0): Activation: successful, device activated.
+Aug 20 19:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755689447.1258] manager: NetworkManager state is now CONNECTED_GLOBAL
+Aug 20 19:30:48 christianjosesoriano NetworkManager[646]: <info>  [1755689448.4645] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 19:30:48 christianjosesoriano NetworkManager[646]: <info>  [1755689448.4657] policy: set 'preconfigured' (wlan0) as default for IPv6 routing and DNS
+Aug 20 19:30:49 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 19:30:53 christianjosesoriano kernel: usb 1-1.1: USB disconnect, device number 7
+Aug 20 19:30:56 christianjosesoriano sudo[5368]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/poff[0m
+Aug 20 19:30:56 christianjosesoriano sudo[5368]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:30:56 christianjosesoriano pppd[5015]: Terminating on signal 15
+Aug 20 19:30:56 christianjosesoriano pppd[5015]: Connect time 1.9 minutes.
+Aug 20 19:30:56 christianjosesoriano pppd[5015]: Sent 18672 bytes, received 18983 bytes.
+Aug 20 19:30:56 christianjosesoriano NetworkManager[646]: <info>  [1755689456.3736] device (ppp0): state change: disconnected -> unmanaged (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 19:30:56 christianjosesoriano sudo[5368]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:30:56 christianjosesoriano pppd[5015]: [0;1;39m[0;1;31m[0;1;39mConnection terminated.[0m
+Aug 20 19:30:56 christianjosesoriano avahi-daemon[524]: Withdrawing workstation service for ppp0.
+Aug 20 19:30:57 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 19:30:57 christianjosesoriano pppd[5015]: Exit.
+Aug 20 19:32:18 christianjosesoriano sshd[5488]: Accepted password for cj from 192.168.68.104 port 54761 ssh2
+Aug 20 19:32:18 christianjosesoriano sshd[5488]: pam_unix(sshd:session): session opened for user cj(uid=1000) by (uid=0)
+Aug 20 19:32:18 christianjosesoriano systemd-logind[543]: New session 8 of user cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 8 has been created for user cj[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 8 has been created for the user cj.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 5488.[0m
+Aug 20 19:32:18 christianjosesoriano systemd[1]: Started session-8.scope - Session 8 of User cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-8.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-8.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2110.[0m
+Aug 20 19:32:18 christianjosesoriano sshd[5488]: [0;38;5;245m[0;1;31m[0;38;5;245mpam_env(sshd:session): deprecated reading of user environment enabled[0m
+Aug 20 19:32:56 christianjosesoriano sudo[5731]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/nano /etc/resolv.conf[0m
+Aug 20 19:32:56 christianjosesoriano sudo[5731]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:33:21 christianjosesoriano sudo[5731]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:34:10 christianjosesoriano sudo[5910]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/resolvectl dns ppp0 8.8.8.8 1.1.1.1[0m
+Aug 20 19:34:10 christianjosesoriano sudo[5910]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 19:34:10 christianjosesoriano sudo[5910]: pam_unix(sudo:session): session closed for user root
+Aug 20 19:40:59 christianjosesoriano sshd[2401]: pam_unix(sshd:session): session closed for user cj
+Aug 20 19:40:59 christianjosesoriano systemd-logind[543]: Session 6 logged out. Waiting for processes to exit.
+Aug 20 19:41:48 christianjosesoriano systemd[1]: session-6.scope: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-6.scope has successfully entered the 'dead' state.[0m
+Aug 20 19:41:48 christianjosesoriano systemd[1]: session-6.scope: Consumed 3.127s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-6.scope completed and consumed the indicated resources.[0m
+Aug 20 19:41:48 christianjosesoriano systemd-logind[543]: Removed session 6.
+[0;38;5;245m░░ [0m[0;32mSubject: Session 6 has been terminated[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA session with the ID 6 has been terminated.[0m
+Aug 20 20:17:01 christianjosesoriano CRON[6049]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Aug 20 20:17:01 christianjosesoriano CRON[6050]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 20 20:17:02 christianjosesoriano CRON[6049]: pam_unix(cron:session): session closed for user root
+Aug 20 20:30:47 christianjosesoriano NetworkManager[646]: <info>  [1755693047.0485] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 21:17:01 christianjosesoriano CRON[6191]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Aug 20 21:17:01 christianjosesoriano CRON[6192]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 20 21:17:01 christianjosesoriano CRON[6191]: pam_unix(cron:session): session closed for user root
+Aug 20 21:19:28 christianjosesoriano sudo[6234]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/nano /etc/systemd/resolved.conf[0m
+Aug 20 21:19:28 christianjosesoriano sudo[6234]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 21:20:23 christianjosesoriano sudo[6234]: pam_unix(sudo:session): session closed for user root
+Aug 20 21:20:28 christianjosesoriano sudo[6400]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/systemctl restart systemd-resolved[0m
+Aug 20 21:20:28 christianjosesoriano sudo[6400]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 21:20:28 christianjosesoriano systemd[1]: Stopping systemd-resolved.service - Network Name Resolution...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit systemd-resolved.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit systemd-resolved.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2199.[0m
+Aug 20 21:20:28 christianjosesoriano systemd[1]: systemd-resolved.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-resolved.service has successfully entered the 'dead' state.[0m
+Aug 20 21:20:28 christianjosesoriano systemd[1]: Stopped systemd-resolved.service - Network Name Resolution.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit systemd-resolved.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit systemd-resolved.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2199 and the job result is done.[0m
+Aug 20 21:20:28 christianjosesoriano systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-resolved.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-resolved.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2199.[0m
+Aug 20 21:20:28 christianjosesoriano systemd-resolved[6406]: Positive Trust Anchors:
+Aug 20 21:20:28 christianjosesoriano systemd-resolved[6406]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Aug 20 21:20:28 christianjosesoriano systemd-resolved[6406]: . IN DS 38696 8 2 683d2d0acb8c9b712a1948b27f741219298d0a450d612c483af444a4c0fb2b16
+Aug 20 21:20:28 christianjosesoriano systemd-resolved[6406]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa corp home internal intranet lan local private test
+Aug 20 21:20:28 christianjosesoriano systemd-resolved[6406]: Using system hostname 'christianjosesoriano'.
+Aug 20 21:20:28 christianjosesoriano systemd[1]: Started systemd-resolved.service - Network Name Resolution.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-resolved.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-resolved.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2199.[0m
+Aug 20 21:20:28 christianjosesoriano sudo[6400]: pam_unix(sudo:session): session closed for user root
+Aug 20 21:21:01 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv6 no longer relevant for mDNS.
+Aug 20 21:21:01 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 21:21:01 christianjosesoriano avahi-daemon[524]: Interface wlan0.IPv4 no longer relevant for mDNS.
+Aug 20 21:21:01 christianjosesoriano avahi-daemon[524]: Leaving mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2454] manager: rfkill: Wi-Fi hardware radio set disabled
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2455] device (wlan0): state change: activated -> unavailable (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2459] dhcp4 (wlan0): canceled DHCP transaction
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2459] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2460] dhcp4 (wlan0): state changed no lease
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2464] dhcp6 (wlan0): canceled DHCP transaction
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2465] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.2465] dhcp6 (wlan0): state changed no lease
+Aug 20 21:21:01 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2206.[0m
+Aug 20 21:21:01 christianjosesoriano avahi-daemon[524]: Withdrawing address record for fe80::f5d3:986d:2e85:1c6a on wlan0.
+Aug 20 21:21:01 christianjosesoriano avahi-daemon[524]: Withdrawing address record for 192.168.68.112 on wlan0.
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DISCONNECTED bssid=e8:48:b8:37:49:13 reason=3 locally_generated=1[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mrfkill: WLAN soft blocked[0m
+Aug 20 21:21:01 christianjosesoriano systemd-resolved[6406]: wlan0: Bus client set default route setting: no
+Aug 20 21:21:01 christianjosesoriano systemd-resolved[6406]: wlan0: Bus client reset DNS server list.
+Aug 20 21:21:01 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2206.[0m
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.3285] manager: NetworkManager state is now DISCONNECTED
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.3318] audit: op="radio-control" arg="wireless-enabled:off" pid=952 uid=1000 result="success"
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.3325] manager: rfkill: Wi-Fi now disabled by radio killswitch
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0[0m
+Aug 20 21:21:01 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 21:21:01 christianjosesoriano NetworkManager[646]: <info>  [1755696061.3356] device (p2p-dev-wlan0): state change: disconnected -> unavailable (reason 'supplicant-failed', sys-iface-state: 'managed')
+Aug 20 21:21:01 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2214.[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 21:21:01 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 21:21:01 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2214.[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Aug 20 21:21:01 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=wlan0 disabled_11b_rates=0[0m
+Aug 20 21:21:06 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 21:21:08 christianjosesoriano sudo[6515]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/sbin/pppd /dev/serial0 115200 connect 'chat -v -f /etc/chatscripts/gprs' noauth defaultroute usepeerdns[0m
+Aug 20 21:21:08 christianjosesoriano sudo[6515]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 21:21:08 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mpppd 2.4.9 started by cj, uid 0[0m
+Aug 20 21:21:08 christianjosesoriano sudo[6515]: pam_unix(sudo:session): session closed for user root
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (BUSY)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (VOICE)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (NO CARRIER)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (NO DIALTONE)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (NO DIAL TONE)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (NO ANSWER)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (DELAYED)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (ERROR)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: abort on (+CGATT: 0)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: send (AT^M)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: timeout set to 12 seconds
+Aug 20 21:21:09 christianjosesoriano chat[6531]: expect (OK)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: AT^M^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: OK
+Aug 20 21:21:09 christianjosesoriano chat[6531]:  -- got it
+Aug 20 21:21:09 christianjosesoriano chat[6531]: send (ATH^M)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: expect (OK)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ATH^M^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: OK
+Aug 20 21:21:09 christianjosesoriano chat[6531]:  -- got it
+Aug 20 21:21:09 christianjosesoriano chat[6531]: send (ATE1^M)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: expect (OK)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ATE1^M^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: OK
+Aug 20 21:21:09 christianjosesoriano chat[6531]:  -- got it
+Aug 20 21:21:09 christianjosesoriano chat[6531]: send (AT+CGDCONT=1,"IP","\T","",0,0^M)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: expect (OK)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: AT+CGDCONT=1,"IP","T","",0,0^M^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: OK
+Aug 20 21:21:09 christianjosesoriano chat[6531]:  -- got it
+Aug 20 21:21:09 christianjosesoriano chat[6531]: send (ATD*99#^M)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: timeout set to 22 seconds
+Aug 20 21:21:09 christianjosesoriano chat[6531]: expect (CONNECT)
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: ATD*99#^M^M
+Aug 20 21:21:09 christianjosesoriano chat[6531]: CONNECT
+Aug 20 21:21:09 christianjosesoriano chat[6531]:  -- got it
+Aug 20 21:21:09 christianjosesoriano chat[6531]: send (^M)
+Aug 20 21:21:09 christianjosesoriano pppd[6518]: Serial connection established.
+Aug 20 21:21:09 christianjosesoriano pppd[6518]: Using interface ppp0
+Aug 20 21:21:09 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mConnect: ppp0 <--> /dev/serial0[0m
+Aug 20 21:21:09 christianjosesoriano NetworkManager[646]: <info>  [1755696069.8644] manager: (ppp0): new Ppp device (/org/freedesktop/NetworkManager/Devices/11)
+Aug 20 21:21:10 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mPAP authentication succeeded[0m
+Aug 20 21:21:11 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 21:21:11 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mlocal  IP address 10.124.146.188[0m
+Aug 20 21:21:11 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mremote IP address 192.168.254.254[0m
+Aug 20 21:21:11 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mprimary   DNS address 10.151.151.1[0m
+Aug 20 21:21:11 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39msecondary DNS address 10.151.151.22[0m
+Aug 20 21:21:11 christianjosesoriano NetworkManager[646]: <info>  [1755696071.6244] device (ppp0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 21:21:11 christianjosesoriano NetworkManager[646]: <info>  [1755696071.6282] device (ppp0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'external')
+Aug 20 21:21:27 christianjosesoriano systemd-resolved[6406]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUsing degraded feature set UDP instead of UDP+EDNS0 for DNS server 1.1.1.1.[0m
+Aug 20 21:21:37 christianjosesoriano systemd-resolved[6406]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUsing degraded feature set TCP instead of UDP for DNS server 1.1.1.1.[0m
+Aug 20 21:22:08 christianjosesoriano systemd-resolved[6406]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUsing degraded feature set UDP instead of TCP for DNS server 1.1.1.1.[0m
+Aug 20 21:23:01 christianjosesoriano kernel: usb 1-1.1: new low-speed USB device number 8 using xhci_hcd
+Aug 20 21:23:01 christianjosesoriano kernel: usb 1-1.1: New USB device found, idVendor=258a, idProduct=0001, bcdDevice= 1.00
+Aug 20 21:23:01 christianjosesoriano kernel: usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 20 21:23:01 christianjosesoriano kernel: usb 1-1.1: Product: USB KEYBOARD
+Aug 20 21:23:01 christianjosesoriano kernel: usb 1-1.1: Manufacturer: SINO WEALTH
+Aug 20 21:23:01 christianjosesoriano kernel: input: SINO WEALTH USB KEYBOARD as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:258A:0001.0005/input/input9
+Aug 20 21:23:01 christianjosesoriano kernel: hid-generic 0003:258A:0001.0005: input,hidraw2: USB HID v1.10 Keyboard [SINO WEALTH USB KEYBOARD] on usb-0000:01:00.0-1.1/input0
+Aug 20 21:23:01 christianjosesoriano kernel: input: SINO WEALTH USB KEYBOARD System Control as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:258A:0001.0006/input/input10
+Aug 20 21:23:01 christianjosesoriano kernel: input: SINO WEALTH USB KEYBOARD Consumer Control as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:258A:0001.0006/input/input11
+Aug 20 21:23:01 christianjosesoriano kernel: hid-generic 0003:258A:0001.0006: input,hiddev96,hidraw3: USB HID v1.10 Device [SINO WEALTH USB KEYBOARD] on usb-0000:01:00.0-1.1/input1
+Aug 20 21:23:01 christianjosesoriano mtp-probe[6752]: checking bus 1, device 8: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Aug 20 21:23:01 christianjosesoriano mtp-probe[6752]: bus: 1, device: 8 was not an MTP device
+Aug 20 21:23:02 christianjosesoriano (udev-worker)[6756]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mevent8: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.[0m
+Aug 20 21:23:02 christianjosesoriano (udev-worker)[6753]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mevent7: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.[0m
+Aug 20 21:23:02 christianjosesoriano systemd-logind[543]: Watching system buttons on /dev/input/event7 (SINO WEALTH USB KEYBOARD System Control)
+Aug 20 21:23:02 christianjosesoriano (udev-worker)[6762]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mevent6: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.[0m
+Aug 20 21:23:02 christianjosesoriano systemd-logind[543]: Watching system buttons on /dev/input/event6 (SINO WEALTH USB KEYBOARD)
+Aug 20 21:23:02 christianjosesoriano mtp-probe[6774]: checking bus 1, device 8: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Aug 20 21:23:02 christianjosesoriano mtp-probe[6774]: bus: 1, device: 8 was not an MTP device
+Aug 20 21:25:56 christianjosesoriano pulseaudio[765]: [0;1;31m[0;1;39m[0;1;31mALSA woke us up to write new data to the device, but there was actually nothing to write.[0m
+Aug 20 21:25:56 christianjosesoriano pulseaudio[765]: [0;1;31m[0;1;39m[0;1;31mMost likely this is a bug in the ALSA driver '(null)'. Please report this issue to the ALSA developers.[0m
+Aug 20 21:25:56 christianjosesoriano pulseaudio[765]: [0;1;31m[0;1;39m[0;1;31mWe were woken up with POLLOUT set -- however a subsequent snd_pcm_avail() returned 0 or another value < min_avail.[0m
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.0388] manager: rfkill: Wi-Fi hardware radio set enabled
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.0456] audit: op="radio-control" arg="wireless-enabled:on" pid=952 uid=1000 result="success"
+Aug 20 21:29:02 christianjosesoriano kernel: brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.0498] manager: rfkill: Wi-Fi now enabled by radio killswitch
+Aug 20 21:29:02 christianjosesoriano systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2294.[0m
+Aug 20 21:29:02 christianjosesoriano systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit systemd-rfkill.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit systemd-rfkill.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2294.[0m
+Aug 20 21:29:02 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mnl80211: kernel reports: Registration to specific type not supported[0m
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1585] device (wlan0): supplicant interface state: internal-starting -> disconnected
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1588] device (p2p-dev-wlan0): state change: unavailable -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1644] Wi-Fi P2P device controlled by interface wlan0 created
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1686] manager: (p2p-dev-wlan0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/12)
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1706] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1717] device (wlan0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Aug 20 21:29:02 christianjosesoriano NetworkManager[646]: <info>  [1755696542.1807] device (p2p-dev-wlan0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7215] policy: auto-activating connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7225] device (wlan0): Activation: starting connection 'preconfigured' (adead6a5-d161-40d8-9b2c-18b57d6efb1f)
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7227] device (wlan0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7232] manager: NetworkManager state is now CONNECTING
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7249] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7261] device (wlan0): Activation: (wifi) access point 'preconfigured' has security, but secrets are required.
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7262] device (wlan0): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7266] sup-iface[ce5101497b5e0be6,4,wlan0]: wps: type pbc start...
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7341] device (wlan0): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7350] device (wlan0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPS-PBC-ACTIVE[0m
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7380] device (wlan0): Activation: (wifi) connection 'preconfigured' has security, and secrets exist.  No new secrets needed.
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7391] Config: added 'ssid' value 'tp-link'
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7392] Config: added 'scan_ssid' value '1'
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7393] Config: added 'bgscan' value 'simple:30:-70:86400'
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7394] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK'
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7394] Config: added 'psk' value '<hidden>'
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPS-CANCEL[0m
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7654] device (wlan0): supplicant interface state: disconnected -> scanning
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.7655] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> scanning
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Trying to associate with e8:48:b8:37:49:13 (SSID='tp-link' freq=5220 MHz)[0m
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.8136] device (wlan0): supplicant interface state: scanning -> associating
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.8138] device (p2p-dev-wlan0): supplicant management interface state: scanning -> associating
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: Associated with e8:48:b8:37:49:13[0m
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0[0m
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=US[0m
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9256] device (wlan0): supplicant interface state: associating -> 4way_handshake
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9258] device (p2p-dev-wlan0): supplicant management interface state: associating -> 4way_handshake
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: WPA: Key negotiation completed with e8:48:b8:37:49:13 [PTK=CCMP GTK=CCMP][0m
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;39m[0;1;31m[0;1;39mwlan0: CTRL-EVENT-CONNECTED - Connection to e8:48:b8:37:49:13 completed [id=0 id_str=][0m
+Aug 20 21:29:04 christianjosesoriano wpa_supplicant[649]: [0;1;31m[0;1;39m[0;1;31mbgscan simple: Failed to enable signal strength monitoring[0m
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9456] device (wlan0): supplicant interface state: 4way_handshake -> completed
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9457] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "tp-link"
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9458] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9463] device (wlan0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9490] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 21:29:04 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv6 with address fe80::f5d3:986d:2e85:1c6a.
+Aug 20 21:29:04 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv6 for mDNS.
+Aug 20 21:29:04 christianjosesoriano avahi-daemon[524]: Registering new address record for fe80::f5d3:986d:2e85:1c6a on wlan0.*.
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9708] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 21:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755696544.9747] policy: set 'preconfigured' (wlan0) as default for IPv4 routing and DNS
+Aug 20 21:29:04 christianjosesoriano avahi-daemon[524]: Joining mDNS multicast group on interface wlan0.IPv4 with address 192.168.68.112.
+Aug 20 21:29:04 christianjosesoriano avahi-daemon[524]: New relevant interface wlan0.IPv4 for mDNS.
+Aug 20 21:29:04 christianjosesoriano avahi-daemon[524]: Registering new address record for 192.168.68.112 on wlan0.IPv4.
+Aug 20 21:29:04 christianjosesoriano systemd-resolved[6406]: wlan0: Bus client set default route setting: yes
+Aug 20 21:29:05 christianjosesoriano systemd-resolved[6406]: wlan0: Bus client set DNS server list to: 192.168.1.1, 192.168.68.1
+Aug 20 21:29:05 christianjosesoriano dbus-daemon[527]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=646 comm="/usr/sbin/NetworkManager --no-daemon")
+Aug 20 21:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755696545.0105] device (wlan0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:05 christianjosesoriano systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2302.[0m
+Aug 20 21:29:05 christianjosesoriano dbus-daemon[527]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug 20 21:29:05 christianjosesoriano systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit NetworkManager-dispatcher.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit NetworkManager-dispatcher.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2302.[0m
+Aug 20 21:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755696545.1308] device (wlan0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755696545.1325] device (wlan0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Aug 20 21:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755696545.1353] manager: NetworkManager state is now CONNECTED_SITE
+Aug 20 21:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755696545.1429] device (wlan0): Activation: successful, device activated.
+Aug 20 21:29:05 christianjosesoriano NetworkManager[646]: <info>  [1755696545.1449] manager: NetworkManager state is now CONNECTED_GLOBAL
+Aug 20 21:29:06 christianjosesoriano NetworkManager[646]: <info>  [1755696546.7308] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+Aug 20 21:29:06 christianjosesoriano NetworkManager[646]: <info>  [1755696546.7329] policy: set 'preconfigured' (wlan0) as default for IPv6 routing and DNS
+Aug 20 21:29:07 christianjosesoriano systemd[1]: systemd-rfkill.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit systemd-rfkill.service has successfully entered the 'dead' state.[0m
+Aug 20 21:29:14 christianjosesoriano sudo[7637]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/poff[0m
+Aug 20 21:29:14 christianjosesoriano sudo[7637]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 21:29:14 christianjosesoriano pppd[6518]: Terminating on signal 15
+Aug 20 21:29:14 christianjosesoriano pppd[6518]: Connect time 8.1 minutes.
+Aug 20 21:29:14 christianjosesoriano pppd[6518]: Sent 890286 bytes, received 1273800 bytes.
+Aug 20 21:29:14 christianjosesoriano sudo[7637]: pam_unix(sudo:session): session closed for user root
+Aug 20 21:29:14 christianjosesoriano NetworkManager[646]: <info>  [1755696554.9779] device (ppp0): state change: disconnected -> unmanaged (reason 'connection-assumed', sys-iface-state: 'external')
+Aug 20 21:29:15 christianjosesoriano pppd[6518]: [0;1;39m[0;1;31m[0;1;39mConnection terminated.[0m
+Aug 20 21:29:15 christianjosesoriano avahi-daemon[524]: Withdrawing workstation service for ppp0.
+Aug 20 21:29:15 christianjosesoriano systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.[0m
+Aug 20 21:29:15 christianjosesoriano kernel: usb 1-1.1: USB disconnect, device number 8
+Aug 20 21:29:16 christianjosesoriano pppd[6518]: Exit.
+Aug 20 21:29:57 christianjosesoriano sshd[7691]: Accepted password for cj from 192.168.68.104 port 57506 ssh2
+Aug 20 21:29:57 christianjosesoriano sshd[7691]: pam_unix(sshd:session): session opened for user cj(uid=1000) by (uid=0)
+Aug 20 21:29:57 christianjosesoriano systemd-logind[543]: New session 11 of user cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 11 has been created for user cj[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 11 has been created for the user cj.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 7691.[0m
+Aug 20 21:29:57 christianjosesoriano systemd[1]: Started session-11.scope - Session 11 of User cj.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-11.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-11.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2382.[0m
+Aug 20 21:29:57 christianjosesoriano sshd[7691]: [0;38;5;245m[0;1;31m[0;38;5;245mpam_env(sshd:session): deprecated reading of user environment enabled[0m
+Aug 20 21:37:08 christianjosesoriano sshd[5488]: pam_unix(sshd:session): session closed for user cj
+Aug 20 21:37:08 christianjosesoriano systemd-logind[543]: Session 8 logged out. Waiting for processes to exit.
+Aug 20 21:38:20 christianjosesoriano systemd[1]: session-8.scope: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-8.scope has successfully entered the 'dead' state.[0m
+Aug 20 21:38:20 christianjosesoriano systemd[1]: session-8.scope: Consumed 6.462s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-8.scope completed and consumed the indicated resources.[0m
+Aug 20 21:38:20 christianjosesoriano systemd-logind[543]: Removed session 8.
+[0;38;5;245m░░ [0m[0;32mSubject: Session 8 has been terminated[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA session with the ID 8 has been terminated.[0m
+Aug 20 22:17:01 christianjosesoriano CRON[10109]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Aug 20 22:17:01 christianjosesoriano CRON[10110]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 20 22:17:01 christianjosesoriano CRON[10109]: pam_unix(cron:session): session closed for user root
+Aug 20 22:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755700144.9940] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 22:46:53 christianjosesoriano kernel: usb 1-1.3: USB disconnect, device number 3
+Aug 20 22:46:53 christianjosesoriano kernel: usb 1-1.3.1: USB disconnect, device number 5
+Aug 20 22:46:53 christianjosesoriano kernel: usb 1-1.3.2: USB disconnect, device number 6
+Aug 20 22:46:53 christianjosesoriano thd[544]: Error reading device '/dev/input/event1'
+Aug 20 23:17:01 christianjosesoriano CRON[10199]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Aug 20 23:17:01 christianjosesoriano CRON[10200]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 20 23:17:01 christianjosesoriano CRON[10199]: pam_unix(cron:session): session closed for user root
+Aug 20 23:29:04 christianjosesoriano NetworkManager[646]: <info>  [1755703744.9816] dhcp4 (wlan0): state changed new lease, address=192.168.68.112
+Aug 20 23:29:57 christianjosesoriano kernel: usb 1-1.1: new full-speed USB device number 9 using xhci_hcd
+Aug 20 23:29:57 christianjosesoriano kernel: usb 1-1.1: New USB device found, idVendor=1a86, idProduct=7523, bcdDevice= 2.64
+Aug 20 23:29:57 christianjosesoriano kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+Aug 20 23:29:57 christianjosesoriano kernel: usb 1-1.1: Product: USB Serial
+Aug 20 23:29:57 christianjosesoriano mtp-probe[10230]: checking bus 1, device 9: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Aug 20 23:29:57 christianjosesoriano mtp-probe[10230]: bus: 1, device: 9 was not an MTP device
+Aug 20 23:29:57 christianjosesoriano kernel: usbcore: registered new interface driver usbserial_generic
+Aug 20 23:29:57 christianjosesoriano kernel: usbserial: USB Serial support registered for generic
+Aug 20 23:29:57 christianjosesoriano kernel: usbcore: registered new interface driver ch341
+Aug 20 23:29:57 christianjosesoriano kernel: usbserial: USB Serial support registered for ch341-uart
+Aug 20 23:29:57 christianjosesoriano kernel: ch341 1-1.1:1.0: ch341-uart converter detected
+Aug 20 23:29:57 christianjosesoriano kernel: usb 1-1.1: ch341-uart converter now attached to ttyUSB0
+Aug 20 23:29:57 christianjosesoriano mtp-probe[10236]: checking bus 1, device 9: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Aug 20 23:29:57 christianjosesoriano mtp-probe[10236]: bus: 1, device: 9 was not an MTP device
+Aug 20 23:30:00 christianjosesoriano ModemManager[678]: <info>  [base-manager] couldn't check support for device '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1': not supported by any plugin
+Aug 20 23:39:34 christianjosesoriano sudo[10297]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/apt install gpsd gpsd-clients python3-gps -y[0m
+Aug 20 23:39:34 christianjosesoriano sudo[10297]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:39:37 christianjosesoriano sudo[10297]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:39:44 christianjosesoriano sudo[10334]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/systemctl stop gpsd.socket[0m
+Aug 20 23:39:44 christianjosesoriano sudo[10334]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:39:44 christianjosesoriano sudo[10334]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:39:49 christianjosesoriano sudo[10352]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/sbin/gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock[0m
+Aug 20 23:39:49 christianjosesoriano sudo[10352]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:39:49 christianjosesoriano sudo[10352]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:45:27 christianjosesoriano sudo[11073]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/systemctl stop gpsd.socket[0m
+Aug 20 23:45:27 christianjosesoriano sudo[11073]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:45:27 christianjosesoriano sudo[11073]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:45:27 christianjosesoriano sudo[11077]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/systemctl stop gpsd[0m
+Aug 20 23:45:27 christianjosesoriano sudo[11077]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:45:27 christianjosesoriano sudo[11077]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:45:30 christianjosesoriano sudo[11095]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/nano /etc/default/gpsd[0m
+Aug 20 23:45:30 christianjosesoriano sudo[11095]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:46:08 christianjosesoriano sudo[11095]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:46:14 christianjosesoriano sudo[11270]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/systemctl enable gpsd.socket[0m
+Aug 20 23:46:14 christianjosesoriano sudo[11270]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:46:14 christianjosesoriano systemd[1]: Reloading.
+Aug 20 23:46:15 christianjosesoriano sudo[11270]: pam_unix(sudo:session): session closed for user root
+Aug 20 23:46:18 christianjosesoriano sudo[11317]: [0;1;39m[0;1;31m[0;1;39m      cj : TTY=pts/3 ; PWD=/home/cj/Desktop/smartstick/SmartStick ; USER=root ; COMMAND=/usr/bin/systemctl start gpsd.socket[0m
+Aug 20 23:46:18 christianjosesoriano sudo[11317]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Aug 20 23:46:18 christianjosesoriano (sd-listen[11321]: [0;1;31m[0;1;39m[0;1;31mgpsd.socket: Failed to create listening socket ([::1]:2947): Address already in use[0m
+Aug 20 23:46:18 christianjosesoriano systemd[1]: [0;1;31m[0;1;39m[0;1;31mgpsd.socket: Failed to receive listening socket ([::1]:2947): Input/output error[0m
+Aug 20 23:46:18 christianjosesoriano systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgpsd.socket: Failed to listen on sockets: Input/output error[0m
+Aug 20 23:46:18 christianjosesoriano systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgpsd.socket: Failed with result 'resources'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit gpsd.socket has entered the 'failed' state with result 'resources'.[0m
+Aug 20 23:46:18 christianjosesoriano systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to listen on gpsd.socket - GPS (Global Positioning System) Daemon Sockets.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit gpsd.socket has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://www.debian.org/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit gpsd.socket has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2470 and the job result is failed.[0m
+Aug 20 23:46:18 christianjosesoriano sudo[11317]: pam_unix(sudo:session): session closed for user root

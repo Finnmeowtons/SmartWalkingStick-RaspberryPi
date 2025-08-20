@@ -68,6 +68,37 @@ def detect_online(image_path: str, prompt: str = "Describe objects in this image
     except Exception as e:
         return f"Error: {e}"
 
+def summarize_route(steps: list) -> str:
+    """
+    Ask Gemini to create a natural, Taglish summary of the route.
+    Args:
+        steps (list of dict): OSRM steps (from get_walking_directions)
+    Returns:
+        str: Natural spoken summary
+    """
+    if not steps:
+        return "Walang route na nahanap."
+
+    # Prepare a compact text for Gemini
+    raw_route = []
+    for step in steps:
+        dist = f"{int(step['distance_m'])} meters"
+        raw_route.append(f"{step['instruction']} for {dist}")
+
+    route_text = "\n".join(raw_route)
+
+    prompt = (
+        "Summarize these walking directions clearly and shortly for a blind person. "
+        "Use Taglish, conyo style (BGC vibe). "
+        "Mention total steps, approximate distance, ETA, and number of turns. "
+        "Then give step-by-step without numbering in simple phrasing.\n\n"
+        "Do think about this importantly since you are handling blind person"
+        f"{route_text}"
+    )
+
+    return ask_gemini(prompt)
+
+
 
 if __name__ == "__main__":
     image_path = get_path("images", "detect.jpg")

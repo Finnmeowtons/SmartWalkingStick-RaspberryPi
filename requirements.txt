@@ -10,3 +10,4 @@ playsound
 pygobject
 requests
 google-genai
+geopy

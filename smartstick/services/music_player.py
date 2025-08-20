@@ -9,7 +9,7 @@ import time
 
 current_music = None
 mpv_socket_path = "/tmp/mpvsocket"
-current_volume = 0.2  # 20%
+current_volume = 0.6  # 20%
 current_audio_url = None
 
 def send_mpv_command(command: dict):

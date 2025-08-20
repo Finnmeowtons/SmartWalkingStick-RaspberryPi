@@ -12,7 +12,7 @@ SOUND_CUES = {
     "idle": ["idle.wav", "idle2.wav"]
 }
 
-def play_sound(cue: str, volume: float = 0.1):
+def play_sound(cue: str, volume: float = 0.3):
     if cue not in SOUND_CUES:
         print(f"[SoundCue] No sounds defined for cue '{cue}'")
         return

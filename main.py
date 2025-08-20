@@ -9,6 +9,7 @@ from smartstick.services.tts_engine import tts_speak, stop_tts
 from smartstick.services.music_player import play_song_youtube, stop_music, current_volume, decrease_volume, increase_volume
 from smartstick.hardware.vision import detect_objects_and_speak
 from smartstick.hardware import time_of_flight, vibrator
+from smartstick.services.sound_cues import play_sound
 # from smartstick.hardware.gps import
 from smartstick.core import preload
 
@@ -26,6 +27,9 @@ def toggle_obstacle_detection(state: bool):
         time_of_flight.disable()
         vibrator.disable()
 
+toggle_obstacle_detection(True)
+
+
 def handle_obstacle():
     if not vibration_obstacle:
         return
@@ -38,12 +42,11 @@ def trigger_object_detection():
 
 
 print("\nWaiting for WakeWord...")
-
 isChatActive = False
 last_sound_time = time.time()
 
 while True:
-    print(f"Distance: {dist} mm -> Vibration: {duty}%")
+    handle_obstacle()
     data = stream.read(8192)
     if recognizer.AcceptWaveform(data):
         result_json = json.loads(recognizer.Result())
@@ -94,6 +97,7 @@ while True:
                 continue
 
             if any(w in text.lower() for w in WAKEWORDS):
+                play_sound("listening")
                 print("\n🎤 Speak now...")
                 isChatActive = True
     else:
@@ -103,4 +107,5 @@ while True:
 
     if time.time() - last_sound_time > 7 and isChatActive:
         isChatActive = False
+        play_sound("idle")
         print("\nWaiting for WakeWord...")
