@@ -78,20 +78,27 @@
   * Falls back with `"Walang GPS signal"` if no fix is acquired.
 * Used by navigation services for **turn-by-turn guidance**.
 
-### 🗺️ Walking Directions (OSRM Service)
+### 🗺️ Walking Directions & Nearest Place Finder (OSRM Service)
 
-* Integrates with **Open Source Routing Machine (OSRM)** to fetch walking directions.
+* Integrates with **Open Source Routing Machine (OSRM)** for walking directions and navigation.
 * Workflow:
-  1. Current location from **GPS**.
-  2. Destination coordinates provided by user/voice command.
-  3. Route requested via **OSRM public API**.
-* **Gemini-powered summarization**:
-  * Generates a **clear Tagalog route summary** (e.g., "Lumiko ka pakaliwa sa De Venecia Avenue").
-  * Falls back to a **hardcoded JSON-to-route parser** if Gemini fails.
-* Live navigation:
-  * Tracks current GPS against route steps.
-  * Speaks turn-by-turn instructions.
-  * Announces arrival with **context** (e.g., “Nakarating ka na, nasa kanan side”).
+  1. Current location retrieved from **GPS**.
+  2. User gives a voice command like:
+     * `"Gabay papunta sa SM"` 
+     * `"Turo papunta sa Jollibee"`
+     * Short and comfortable for Tagalog users: `"Punta sa [place]"`, `"Turo sa [place]"`.
+  3. The system finds the **nearest matching place** using **Nominatim**.
+  4. Coordinates are sent to OSRM for walking directions.
+* **Turn-by-turn guidance**:
+  * Instructions are spoken via **TTS**.
+  * `json_to_route()` parses OSRM JSON into a human-friendly summary in Tagalog.
+* **Live navigation with `osrm_navigate()`**:
+  * Continuously tracks GPS location.
+  * Announces **next step** until arrival.
+  * Supports arrival context: `"Nakarating ka na sa [destination]"`.
+* **Fallback**:
+  * If no nearby match is found, the system uses **Gemini API** to give a rough guide.
+  * If offline, provides a **hardcoded fallback message**.
 
 ### ⚡ Hybrid Preload System (memo)
 

@@ -2,6 +2,7 @@ import json
 import sys
 import time
 import asyncio
+import re
 from smartstick.utils.config import WAKEWORDS
 from smartstick.interfaces.gemini import ask_gemini, polish_music_command
 from smartstick.services.stt_engine import stream, recognizer
@@ -10,7 +11,8 @@ from smartstick.services.music_player import play_song_youtube, stop_music, curr
 from smartstick.hardware.vision import detect_objects_and_speak
 from smartstick.hardware import time_of_flight, vibrator
 from smartstick.services.sound_cues import play_sound
-# from smartstick.hardware.gps import
+from smartstick.services.places_service import search_place
+from smartstick.services.osrm_service import get_walking_directions, json_to_route, navigate_osrm
 from smartstick.core import preload
 
 preload.preload_all()
@@ -56,7 +58,7 @@ while True:
             last_sound_time = time.time()
             text_lower = text.lower()
 
-            
+            # === Volume Controls ===
             if any(kw in text_lower for kw in ["volume increase", "increase volume", "volume up", "up volume", "lakasan"]):
                 increase_volume()
                 continue
@@ -68,6 +70,7 @@ while True:
                 stop_tts()
                 continue
 
+            # === Chat Mode ===
             if isChatActive:
                 stream.stop_stream()
 
@@ -89,6 +92,49 @@ while True:
             
                 elif "nasa harap" in text_lower:
                     trigger_object_detection()
+
+                # === 🚩 Navigation / Directions ===
+                elif "gabay papunta" in text_lower:
+                    # Extract the destination after the keyword
+                    destination = text_lower.split("gabay papunta")[-1].strip()
+                    destination = re.sub(r"[^a-zA-Z0-9\s]", "", destination).strip()
+                    if destination:
+                        nearest = search_place(destination)
+                        dest_lat = nearest["lat"]
+                        dest_lon = nearest["lon"]
+
+                        if dest_lat:
+                            navigate_osrm(dest_lat, dest_lon)
+                        else:
+                            tts_speak(nearest["advice"], lang="tl")
+                    else:
+                        tts_speak("Anong destinasyon ang gusto mong puntahan?", lang="tl")
+
+                elif "turo papunta" in text_lower:
+                    # Extract the destination after the keyword
+                    destination = text_lower.split("turo papunta sa")[-1].strip()
+                    destination = re.sub(r"[^a-zA-Z0-9\s]", "", destination).strip()
+                    if destination:
+                        print(f"Destination: {destination}")
+                        nearest = search_place(destination)
+                        print(f"nearest: {nearest}")
+                        dest_lat = nearest["lat"]
+                        dest_lon = nearest["lon"]
+
+                        if dest_lat:
+                            steps, summary, error = get_walking_directions(dest_lat, dest_lon)
+                            if error:
+                                print("Error:", error)
+                                tts_speak(error, lang="tl")
+                            else:
+                                instructions = json_to_route(steps)
+                                print(instructions)
+                                # For now just speak the first step
+                                tts_speak(instructions, lang="tl")
+                        else:
+                            tts_speak(nearest["advice"], lang="tl")
+                    else:
+                        tts_speak("Anong destinasyon ang gusto mong puntahan?", lang="tl")
 
                 else:
                     tts_speak("Hindi kita gets bes.")

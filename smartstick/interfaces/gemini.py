@@ -12,11 +12,12 @@ def clean_text(text: str) -> str:
 def polish_music_command(raw_text: str) -> str:
     try:
         prompt = "Extract only the music title from this input, no extra words: " + raw_text
-
         response = client.models.generate_content(
             model='gemini-2.5-flash-lite',
             contents=[prompt]
         )
+        print(f"polish_music_command: {response.text}")
+
         return response.text.strip()
     except Exception as e:
         print(f"Gemini error: {e}")
@@ -90,7 +91,7 @@ def summarize_route(steps: list) -> str:
     prompt = (
         "Summarize these walking directions clearly and shortly for a blind person. "
         "Use Taglish, conyo style (BGC vibe). "
-        "Mention total steps, approximate distance, ETA, and number of turns. "
+        "Mention total steps, approximate distance, ETA of a blind person walking, and number of turns. "
         "Then give step-by-step without numbering in simple phrasing.\n\n"
         "Do think about this importantly since you are handling blind person"
         f"{route_text}"

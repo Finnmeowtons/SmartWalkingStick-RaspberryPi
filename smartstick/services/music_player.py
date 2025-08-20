@@ -2,6 +2,8 @@ import subprocess
 import socket
 import json
 from yt_dlp import YoutubeDL
+from yt_dlp.utils import DownloadError
+
 from smartstick.services.tts_engine import tts_speak
 import os
 import threading
@@ -51,40 +53,47 @@ def play_song_youtube(song_name):
         'quiet': True,
         'default_search': 'ytsearch',
     }
-    with YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(song_name, download=False)
-        video = info['entries'][0] if 'entries' in info else info
-        audio_url = video['url']
-        title = video.get('title', 'Unknown')
-        print(f"Music title: {title}")
 
-        current_audio_url = audio_url
+    try:
+        with YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(song_name, download=False)
+            video = info['entries'][0] if 'entries' in info else info
+            audio_url = video['url']
+            title = video.get('title', 'Unknown')
+            print(f"Music title: {title}")
 
-        def speak_and_play():
-            tts_thread = threading.Thread(target=tts_speak, args=(f"Playing {title}", "tl"))
-            tts_thread.start()
+            current_audio_url = audio_url
 
-            time.sleep(1.0)
+            def speak_and_play():
+                tts_thread = threading.Thread(target=tts_speak, args=(f"Playing {title}", "tl"))
+                tts_thread.start()
 
-            if os.path.exists(mpv_socket_path):
-                os.unlink(mpv_socket_path)
-            global current_music
-            current_music = subprocess.Popen([
-                'mpv', '--no-video',
-                '--msg-level=all=no',
-                f'--input-ipc-server={mpv_socket_path}',
-                f'--volume={current_volume*100}',
-                audio_url
-            ])
+                import time
+                time.sleep(1.0)
 
-        threading.Thread(target=speak_and_play).start()
+                if os.path.exists(mpv_socket_path):
+                    os.unlink(mpv_socket_path)
+                global current_music
+                current_music = subprocess.Popen([
+                    'mpv', '--no-video',
+                    '--msg-level=all=no',
+                    f'--input-ipc-server={mpv_socket_path}',
+                    f'--volume={current_volume*100}',
+                    audio_url
+                ])
+
+            threading.Thread(target=speak_and_play).start()
+
+    except Exception as e:
+        print(f"Music error: {e}")
+        tts_speak(f"Pasensya bes, di ko mahanap yung {song_name}", "tl")
 
 if __name__ == "__main__":
     play_song_youtube("eraserhead overdrive")
-    import time
-    time.sleep(5)
-    increase_volume(0.2)
-    time.sleep(5)
-    decrease_volume(0.1)
-    time.sleep(10)
-    stop_music()
+    # import time
+    # time.sleep(5)
+    # increase_volume(0.2)
+    # time.sleep(5)
+    # decrease_volume(0.1)
+    # time.sleep(10)
+    # stop_music()
