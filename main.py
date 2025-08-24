@@ -13,11 +13,51 @@ from smartstick.hardware import time_of_flight, vibrator
 from smartstick.services.sound_cues import play_sound
 from smartstick.services.places_service import search_place
 from smartstick.services.osrm_service import get_walking_directions, json_to_route, navigate_osrm
+from smartstick.hardware.sim_module import read_sms
 from smartstick.core import preload
 
 preload.preload_all()
 
 vibration_obstacle = True
+sms_messages = [] 
+current_sms_index = 0
+sms_mode_active = False
+
+def start_sms_mode():
+    global sms_messages, current_sms_index, sms_mode_active
+    sms_messages = read_sms(unread_only=False)
+    current_sms_index = 0
+    sms_mode_active = True
+
+    if sms_messages:
+        read_current_sms()
+    else:
+        tts_speak("Walang bagong mensahe")  # No new messages
+
+def read_current_sms():
+    global current_sms_index, sms_messages
+    if not sms_messages:
+        tts_speak("Walang mensahe")
+        return
+
+    idx, status, sender, content = sms_messages[current_sms_index]
+    tts_speak(f"Mensahe mula kay {sender}: {content}")
+
+def next_sms():
+    global current_sms_index, sms_messages
+    if current_sms_index < len(sms_messages) - 1:
+        current_sms_index += 1
+        read_current_sms()
+    else:
+        tts_speak("Wala nang natitirang mensahe")
+
+def repeat_sms():
+    read_current_sms()
+
+def stop_sms_mode():
+    global sms_mode_active
+    sms_mode_active = False
+    tts_speak("SMS mode off")
 
 def toggle_obstacle_detection(state: bool):
     global vibration_obstacle
@@ -57,6 +97,18 @@ while True:
             print(text)
             last_sound_time = time.time()
             text_lower = text.lower()
+            
+            # === SMS Mode Commands ===
+            if sms_mode_active:
+                if "sunod" in text_lower:
+                    next_sms()
+                    continue
+                elif "ulitin" in text_lower:
+                    repeat_sms()
+                    continue
+                elif "stop" in text_lower or "tapos" in text_lower:
+                    stop_sms_mode()
+                    continue
 
             # === Volume Controls ===
             if any(kw in text_lower for kw in ["volume increase", "increase volume", "volume up", "up volume", "lakasan"]):
@@ -70,6 +122,8 @@ while True:
                 stop_tts()
                 continue
 
+                        
+
             # === Chat Mode ===
             if isChatActive:
                 stream.stop_stream()
@@ -78,6 +132,9 @@ while True:
                     prompt = text_lower.replace("kumare", "").replace("kumpare", "").strip()
                     reply = ask_gemini(prompt)
                     tts_speak(reply, lang="tl")
+
+                elif "mensahe" in text_lower or "basahin" in text_lower:
+                    start_sms_mode()  # Enter SMS reading mode
 
                 elif "music" in text_lower:
                     play_song_youtube(polish_music_command(text_lower))
@@ -93,7 +150,6 @@ while True:
                 elif "nasa harap" in text_lower:
                     trigger_object_detection()
 
-                # === 🚩 Navigation / Directions ===
                 elif "gabay papunta" in text_lower:
                     # Extract the destination after the keyword
                     destination = text_lower.split("gabay papunta")[-1].strip()
@@ -127,10 +183,12 @@ while True:
                                 print("Error:", error)
                                 tts_speak(error, lang="tl")
                             else:
-                                instructions = json_to_route(steps)
-                                print(instructions)
-                                # For now just speak the first step
-                                tts_speak(instructions, lang="tl")
+                                # instructions = json_to_route(steps)
+                                # print(instructions)
+                                # # For now just speak the first step
+                                # tts_speak(instructions, lang="tl")
+                                tts_speak(summary, lang="tl")
+                                
                         else:
                             tts_speak(nearest["advice"], lang="tl")
                     else:

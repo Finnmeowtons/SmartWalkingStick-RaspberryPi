@@ -19,6 +19,7 @@ def search_place(query, max_distance_km=5):
     :return: dict with 'name', 'lat', 'lon', 'advice'
     """
     current_location = get_gps_coords()
+    # current_location = (120.329134, 16.021163)
     offset = 0.1  # about ~11 km in degrees
     print(f"Current Location: {current_location[0]}, {current_location[1]}" )
     if not current_location:
@@ -41,6 +42,7 @@ def search_place(query, max_distance_km=5):
     try:
         response = requests.get(NOMINATIM_URL, params=params, headers={"User-Agent": "SmartStick/1.0"})
         results = response.json()
+        print(results)
     except Exception as e:
         print(f"Error 0: {e}")
         results = []
@@ -164,7 +166,7 @@ def reverse_geocode(lat, lon):
         return {}
 
 if __name__ == "__main__":
-    nearest = search_place("bus terminal")
+    nearest = search_place("Jollibee")
     dest_lat = nearest["lat"]
     dest_lon = nearest["lon"]
     print(dest_lon)

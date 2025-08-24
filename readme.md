@@ -100,6 +100,23 @@
   * If no nearby match is found, the system uses **Gemini API** to give a rough guide.
   * If offline, provides a **hardcoded fallback message**.
 
+### ✉️ SMS Reader
+
+* Integrates with **SIM800L module** to read and manage SMS messages.
+* Designed for **blind accessibility** with full **voice control**.
+* Core functions:
+  * `read_sms(unread_only=True)`: Fetches SMS messages (all or only unread).
+  * `read_current_sms()`: Reads the currently selected message using TTS.
+  * `next_sms()`: Moves to the next message and reads it aloud.
+  * `repeat_sms()`: Repeats the current message for clarity.
+  * `stop_sms_mode()`: Exits SMS reading mode.
+* **Voice commands**:
+  * `"basahin"` → Activates SMS mode and starts reading.
+  * `"sunod"` → Moves to the next SMS.
+  * `"ulitin"` → Repeats the last SMS.
+  * `"stop"` / `"tapos"` → Exits SMS mode.
+* Messages are spoken via **TTS engine** so blind users can hear both **sender** and **message content**.
+
 ### ⚡ Hybrid Preload System (memo)
 
 * **Fast startup**: loads essentials like Piper immediately.

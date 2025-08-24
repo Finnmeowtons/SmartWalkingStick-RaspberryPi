@@ -17,6 +17,8 @@ def get_walking_directions(end_lat, end_lon):
     """
     # Get starting GPS
     start_lat, start_lon = get_gps_coords()
+    # start_lat = 120.329134
+    # start_lon = 16.021163
     if start_lat is None or start_lon is None:
         return [], None, "Walang GPS signal, hindi makuha ang location mo."
 
@@ -66,7 +68,9 @@ def get_walking_directions(end_lat, end_lon):
         # 🔊 Summarize route here (Gemini → fallback to json_to_route)
         try:
             summary = summarize_route(steps_list)
+            print(f"Summary: {summary}")
             if not summary or summary.startswith("Error"):
+                print(f"Error summary")
                 raise Exception("Gemini failed.")
         except Exception as e:
             print(f"[Gemini Error] {e}. Falling back to hardcoded summary.")
@@ -164,7 +168,7 @@ def json_to_route(steps):
 # Example usage
 if __name__ == "__main__":
     # Example destination
-    dest_lat, dest_lon = 16.020440, 120.322290
+    dest_lat, dest_lon = 16.021138, 120.324259
     # navigate_osrm(dest_lat, dest_lon)
     steps, summary, error = get_walking_directions(dest_lat, dest_lon)
     if error:
@@ -172,6 +176,7 @@ if __name__ == "__main__":
         tts_speak(error, lang="tl")
     else:
         # Maybe just speak the first instruction for now
-        instructions = json_to_route(steps)
-        print(instructions)
-        tts_speak(instructions, lang="tl")
+        # instructions = json_to_route(steps)
+        # print(instructions)
+        # tts_speak(instructions, lang="tl")
+        tts_speak(summary, lang="tl")

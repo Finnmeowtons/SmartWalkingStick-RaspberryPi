@@ -15,21 +15,6 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-
-# def send_at(cmd, delay=1):
-#     """Send AT command to SIM800L and log response."""
-#     try:
-#         with serial.Serial("/dev/serial0", 115200, timeout=2) as ser:
-#             ser.write((cmd + "\r\n").encode())
-#             time.sleep(delay)
-#             resp = ser.read_all().decode(errors="ignore")
-#             print(f"Sent: {cmd} | Response: {resp.strip()}")
-#             logging.info(f"Sent: {cmd} | Response: {resp.strip()}")
-#             return resp
-#     except Exception as e:
-#         logging.error(f"Serial error: {e}")
-#         return ""
-
 def check_internet(interface="wlan0"):
     """Check if interface has internet (ping Google DNS)"""
     try:

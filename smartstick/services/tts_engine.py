@@ -79,4 +79,4 @@ def tts_speak(text: str, lang="tl"):
         tts_piper(text)
 
 if __name__ == "__main__":
-    tts_speak("Hello Dagupan! Testing hybrid TTS.", lang="tl")
+    tts_speak("Hello Dagupan! Shout-out kay Ma'am Angelica.", lang="tl")
