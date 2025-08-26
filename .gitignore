@@ -18,3 +18,5 @@ yolov8n.pt
 # System files
 *.DS_Store
 Thumbs.db
+
+vosk-server/

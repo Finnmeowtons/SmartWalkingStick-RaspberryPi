@@ -3,11 +3,17 @@ import sys
 import time
 import asyncio
 import re
+import os
+import concurrent.futures
+
 from smartstick.utils.config import WAKEWORDS
 from smartstick.interfaces.gemini import ask_gemini, polish_music_command
 from smartstick.services.stt_engine import stream, recognizer
 from smartstick.services.tts_engine import tts_speak, stop_tts
-from smartstick.services.music_player import play_song_youtube, stop_music, current_volume, decrease_volume, increase_volume
+from smartstick.services.music_player import (
+    play_song_youtube, stop_music,
+    current_volume, decrease_volume, increase_volume
+)
 from smartstick.hardware.vision import detect_objects_and_speak
 from smartstick.hardware import time_of_flight, vibrator
 from smartstick.services.sound_cues import play_sound
@@ -18,30 +24,52 @@ from smartstick.core import preload
 
 preload.preload_all()
 
+# ==============================================================
+# ThreadPoolExecutor for heavy tasks (leave 1 core for STT)
+# ==============================================================
+num_workers = max(1, os.cpu_count() - 1)
+executor = concurrent.futures.ThreadPoolExecutor(max_workers=num_workers)
+
+def run_tts(text, lang="tl"):
+    executor.submit(tts_speak, text, lang)
+
+def run_object_detection():
+    executor.submit(asyncio.run, detect_objects_and_speak())
+
+def run_navigation(dest_lat, dest_lon):
+    executor.submit(navigate_osrm, dest_lat, dest_lon)
+
+def run_read_sms(unread_only=False):
+    return executor.submit(read_sms, unread_only)
+
+# ==============================================================
+# SMS MODE
+# ==============================================================
 vibration_obstacle = True
-sms_messages = [] 
+sms_messages = []
 current_sms_index = 0
 sms_mode_active = False
 
 def start_sms_mode():
     global sms_messages, current_sms_index, sms_mode_active
-    sms_messages = read_sms(unread_only=False)
+    future = run_read_sms(unread_only=False)
+    sms_messages = future.result()  # wait for SMS fetch
     current_sms_index = 0
     sms_mode_active = True
 
     if sms_messages:
         read_current_sms()
     else:
-        tts_speak("Walang bagong mensahe")  # No new messages
+        run_tts("Walang bagong mensahe")  # No new messages
 
 def read_current_sms():
     global current_sms_index, sms_messages
     if not sms_messages:
-        tts_speak("Walang mensahe")
+        run_tts("Walang mensahe")
         return
 
     idx, status, sender, content = sms_messages[current_sms_index]
-    tts_speak(f"Mensahe mula kay {sender}: {content}")
+    run_tts(f"Mensahe mula kay {sender}: {content}")
 
 def next_sms():
     global current_sms_index, sms_messages
@@ -49,7 +77,7 @@ def next_sms():
         current_sms_index += 1
         read_current_sms()
     else:
-        tts_speak("Wala nang natitirang mensahe")
+        run_tts("Wala nang natitirang mensahe")
 
 def repeat_sms():
     read_current_sms()
@@ -57,8 +85,11 @@ def repeat_sms():
 def stop_sms_mode():
     global sms_mode_active
     sms_mode_active = False
-    tts_speak("SMS mode off")
+    run_tts("SMS mode off")
 
+# ==============================================================
+# OBSTACLE DETECTION
+# ==============================================================
 def toggle_obstacle_detection(state: bool):
     global vibration_obstacle
     vibration_obstacle = state
@@ -71,7 +102,6 @@ def toggle_obstacle_detection(state: bool):
 
 toggle_obstacle_detection(True)
 
-
 def handle_obstacle():
     if not vibration_obstacle:
         return
@@ -79,10 +109,9 @@ def handle_obstacle():
     duty = vibrator.distance_to_duty(distance)
     vibrator.set_strength(duty)
 
-def trigger_object_detection():
-    asyncio.run(detect_objects_and_speak())
-
-
+# ==============================================================
+# MAIN LOOP
+# ==============================================================
 print("\nWaiting for WakeWord...")
 isChatActive = False
 last_sound_time = time.time()
@@ -97,7 +126,7 @@ while True:
             print(text)
             last_sound_time = time.time()
             text_lower = text.lower()
-            
+
             # === SMS Mode Commands ===
             if sms_mode_active:
                 if "sunod" in text_lower:
@@ -112,17 +141,15 @@ while True:
 
             # === Volume Controls ===
             if any(kw in text_lower for kw in ["volume increase", "increase volume", "volume up", "up volume", "lakasan"]):
-                increase_volume()
+                executor.submit(increase_volume)
                 continue
             elif any(kw in text_lower for kw in ["volume decrease", "decrease volume", "volume down", "bawasan", "hinaan"]):
-                decrease_volume()
+                executor.submit(decrease_volume)
                 continue
             elif "stop" in text_lower:
-                stop_music()
-                stop_tts()
+                executor.submit(stop_music)
+                executor.submit(stop_tts)
                 continue
-
-                        
 
             # === Chat Mode ===
             if isChatActive:
@@ -131,43 +158,40 @@ while True:
                 if "kumare" in text_lower or "kumpare" in text_lower:
                     prompt = text_lower.replace("kumare", "").replace("kumpare", "").strip()
                     reply = ask_gemini(prompt)
-                    tts_speak(reply, lang="tl")
+                    run_tts(reply, lang="tl")
 
                 elif "mensahe" in text_lower or "basahin" in text_lower:
-                    start_sms_mode()  # Enter SMS reading mode
+                    start_sms_mode()
 
                 elif "music" in text_lower:
-                    play_song_youtube(polish_music_command(text_lower))
+                    executor.submit(play_song_youtube, polish_music_command(text_lower))
 
                 elif any(kw in text_lower for kw in ["vibration on", "on vibration", "vibrate on", "on vibrate"]):
                     toggle_obstacle_detection(True)
-                    tts_speak("Obstacle detection enabled.")
+                    run_tts("Obstacle detection enabled.")
 
                 elif any(kw in text_lower for kw in ["vibration off", "off vibration", "vibrate off", "off vibrate"]):
                     toggle_obstacle_detection(False)
-                    tts_speak("Obstacle detection disabled.")
-            
+                    run_tts("Obstacle detection disabled.")
+
                 elif "nasa harap" in text_lower:
-                    trigger_object_detection()
+                    run_object_detection()
 
                 elif "gabay papunta" in text_lower:
-                    # Extract the destination after the keyword
                     destination = text_lower.split("gabay papunta")[-1].strip()
                     destination = re.sub(r"[^a-zA-Z0-9\s]", "", destination).strip()
                     if destination:
                         nearest = search_place(destination)
                         dest_lat = nearest["lat"]
                         dest_lon = nearest["lon"]
-
                         if dest_lat:
-                            navigate_osrm(dest_lat, dest_lon)
+                            run_navigation(dest_lat, dest_lon)
                         else:
-                            tts_speak(nearest["advice"], lang="tl")
+                            run_tts(nearest["advice"], lang="tl")
                     else:
-                        tts_speak("Anong destinasyon ang gusto mong puntahan?", lang="tl")
+                        run_tts("Anong destinasyon ang gusto mong puntahan?", lang="tl")
 
                 elif "turo papunta" in text_lower:
-                    # Extract the destination after the keyword
                     destination = text_lower.split("turo papunta sa")[-1].strip()
                     destination = re.sub(r"[^a-zA-Z0-9\s]", "", destination).strip()
                     if destination:
@@ -181,29 +205,26 @@ while True:
                             steps, summary, error = get_walking_directions(dest_lat, dest_lon)
                             if error:
                                 print("Error:", error)
-                                tts_speak(error, lang="tl")
+                                run_tts(error, lang="tl")
                             else:
-                                # instructions = json_to_route(steps)
-                                # print(instructions)
-                                # # For now just speak the first step
-                                # tts_speak(instructions, lang="tl")
-                                tts_speak(summary, lang="tl")
-                                
+                                run_tts(summary, lang="tl")
                         else:
-                            tts_speak(nearest["advice"], lang="tl")
+                            run_tts(nearest["advice"], lang="tl")
                     else:
-                        tts_speak("Anong destinasyon ang gusto mong puntahan?", lang="tl")
+                        run_tts("Anong destinasyon ang gusto mong puntahan?", lang="tl")
 
                 else:
-                    tts_speak("Hindi kita gets bes.")
+                    run_tts("Hindi kita gets bes.")
 
                 stream.start_stream()
                 continue
 
-            if any(w in text.lower() for w in WAKEWORDS):
+            # === Wakeword ===
+            if any(w in text_lower for w in WAKEWORDS):
                 play_sound("listening")
                 print("\n🎤 Speak now...")
                 isChatActive = True
+
     else:
         partial = json.loads(recognizer.PartialResult()).get('partial', '')
         sys.stdout.write('\r' + partial)
