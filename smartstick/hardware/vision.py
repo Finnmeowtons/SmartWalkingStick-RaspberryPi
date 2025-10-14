@@ -1,4 +1,4 @@
-# vision.py
+
 import cv2
 import requests
 import asyncio
@@ -40,6 +40,7 @@ async def detect_objects_and_speak():
     cam.release()
 
     if ONLINE:
+        print("ONLINE!")
         description = await loop.run_in_executor(executor, detect_online, img_path)
     else:
         description = await loop.run_in_executor(executor, detect_offline, img_path)

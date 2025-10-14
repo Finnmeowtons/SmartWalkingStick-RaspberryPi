@@ -8,8 +8,8 @@ SOUNDS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "sounds")
 
 # Define cues with corresponding WAV files
 SOUND_CUES = {
-    "listening": ["listen.wav", "listen2.wav"],
-    "idle": ["idle.wav", "idle2.wav"]
+    "listening": ["listen.wav"],
+    "idle": ["idle.wav"]
 }
 
 def play_sound(cue: str, volume: float = 0.3):

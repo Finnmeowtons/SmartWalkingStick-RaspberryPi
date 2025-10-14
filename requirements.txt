@@ -11,3 +11,4 @@ pygobject
 requests
 google-genai
 geopy
+pocketsphinx

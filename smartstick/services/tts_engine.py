@@ -1,12 +1,16 @@
 import numpy as np
 import subprocess
 import tempfile
+import asyncio
+import io
 import os
 import wave
+import time
 from piper import PiperVoice
 from gtts import gTTS
 from smartstick.utils.config import PIPER_MODEL
 from smartstick.utils.network_utils import ONLINE
+
 
 # Load Piper model (offline fallback)
 voice = PiperVoice.load(PIPER_MODEL)
@@ -59,7 +63,7 @@ def tts_google(text: str, lang="tl"):
         with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as tmp:
             tts.save(tmp.name)
 
-            stop_tts()
+            # stop_tts()
             current_playback = subprocess.Popen([
                 "ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet",
                 "-af", "atempo=1.1", tmp.name
@@ -72,8 +76,9 @@ def tts_google(text: str, lang="tl"):
 
 def tts_speak(text: str, lang="tl"):
     """Unified entrypoint: Use Google if online, else Piper fallback."""
-    stop_tts() 
+    # stop_tts() 
     if ONLINE:
+        print("ONLINE TTS")
         tts_google(text, lang=lang)
     else:
         tts_piper(text)

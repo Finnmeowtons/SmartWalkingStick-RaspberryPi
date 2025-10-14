@@ -13,6 +13,18 @@ def send_at(command, delay=1):
     resp = ser.read(ser.in_waiting).decode(errors="ignore")
     return resp.strip()
 
+def delete_sms(index=None, delete_all=False):
+    send_at("AT+CMGF=1")  # Text mode
+    if delete_all:
+        resp = send_at("AT+CMGD=1,4", delay=2)  # Delete all messages
+        print("All messages deleted." if "OK" in resp else "Failed to delete all messages.")
+    elif index is not None:
+        resp = send_at(f"AT+CMGD={index}", delay=2)
+        print(f"Message {index} deleted." if "OK" in resp else f"Failed to delete message {index}.")
+    else:
+        print("No index provided and delete_all=False. Nothing deleted.")
+
+
 def get_operator():
     resp = send_at("AT+COPS?")
     # Example: +COPS: 0,0,"Globe Telecom",2
@@ -80,6 +92,8 @@ def read_sms(unread_only=True):
         sender = header[2].replace('"','')
         content = "\n".join(lines[1:])
         messages.append((index, status, sender, content))
+
+    # messages.reverse()
 
     return messages
 
