@@ -48,7 +48,7 @@ def stop_music():
 def play_song_youtube(song_name):
     global current_music, current_audio_url
     ydl_opts = {
-        'format': 'bestaudio/best',
+        'format': 'bestaudio[ext=m4a]/bestaudio/best',
         'noplaylist': True,
         'quiet': True,
         'default_search': 'ytsearch',

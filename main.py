@@ -2,6 +2,7 @@ import json
 import sys
 import time
 import re
+import signal
 import os
 from threading import Thread
 from multiprocessing import Process, Pipe
@@ -33,6 +34,8 @@ preload.preload_all()
 # Global State
 # -----------------------------
 isChatActive = False
+
+shutdown_flag = False
 last_sound_time = time.time()
 sms_mode_active = False
 sms_messages = []
@@ -118,7 +121,50 @@ def handle_obstacle():
 # Music
 # -----------------------------
 def play_music_polished(text_lower):
-    play_song_youtube(polish_music_command(text_lower))
+    play_song_youtube(text_lower)
+
+
+def shutdown_handler(sig, frame):
+    global shutdown_flag
+    if not shutdown_flag:
+        shutdown_flag = True
+        stop_music()
+        print("\n🛑 Shutting down gracefully...")
+
+        try:
+            # Stop audio stream
+            if stream.active:
+                stream.stop()
+                stream.close()
+                print("🎙️ Microphone stopped.")
+        except Exception as e:
+            print(f"Error stopping mic: {e}")
+
+        try:
+            # Stop MQTT safely
+            mqtt_client.disconnect()
+            print("📡 MQTT disconnected.")
+        except Exception as e:
+            print(f"Error disconnecting MQTT: {e}")
+
+        try:
+            # Stop obstacle detection & vibrator
+            toggle_obstacle_detection(False)
+            print("🚫 Obstacle detection disabled.")
+        except Exception as e:
+            print(f"Error disabling obstacle detection: {e}")
+
+        try:
+            # Terminate STT process
+            if stt_process.is_alive():
+                stt_process.terminate()
+                stt_process.join(timeout=2)
+                print("🧠 STT process terminated.")
+        except Exception as e:
+            print(f"Error terminating STT process: {e}")
+
+        print("✅ Clean exit complete.")
+        os._exit(0)
 
 # -----------------------------
 # Main Loop
@@ -145,10 +191,10 @@ def main_loop(pipe_conn):
 
             # === SMS Mode ===
             if sms_mode_active:
-                if "sunod" in text_lower:
+                if "sunod" in text_lower or "next" in text_lower:
                     next_sms()
                     continue
-                elif "ulitin" in text_lower:
+                elif "ulitin" in text_lower or "again" in text_lower:
                     repeat_sms()
                     continue
                 elif "stop" in text_lower or "tapos" in text_lower or "top" in text_lower or "pop" in text_lower or "stuffed" in text_lower:
@@ -180,6 +226,8 @@ def main_loop(pipe_conn):
                     start_sms_mode()
 
                 elif "music" in text_lower:
+                    
+                    run_tts("Searching Music")
                     play_music_polished(text_lower)
 
                 elif any(kw in text_lower for kw in ["vibration on", "on vibration", "vibrate on", "on vibrate"]):
@@ -191,6 +239,7 @@ def main_loop(pipe_conn):
                     run_tts("Obstacle detection disabled.")
 
                 elif "nasa harap" in text_lower:
+                    run_tts("Taking a picture!")
                     run_object_detection_async()
 
                 else:
@@ -229,7 +278,8 @@ def main_loop(pipe_conn):
                             run_tts("Anong destinasyon ang gusto mong puntahan?", lang="tl")
 
                     else:
-                        run_tts("Hindi kita gets bes.")
+                        # run_tts("Hindi kita gets bes.")
+                        print("no")
 
 
             # === Wakeword Detection ===
@@ -296,11 +346,11 @@ def input_listener():
 
         elif user_input == "8":
             increase_volume()
-            run_tts(f"Volume increased to {current_volume()}")
+            # run_tts(f"Volume increased to {current_volume()}")
 
         elif user_input == "9":
             decrease_volume()
-            run_tts(f"Volume decreased to {current_volume()}")
+            # run_tts(f"Volume decreased to {current_volume()}")
 
         elif user_input == "10":
             prompt = input("Enter prompt for Kumare / ChatGPT: ")
@@ -389,12 +439,10 @@ Thread(target=input_listener, daemon=True).start()
 # -----------------------------
 # Keep main thread alive
 # -----------------------------
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("\nShutting down...")
-    stream.stop()
-    stt_process.terminate()
-    stt_process.join()
-    sys.exit(0)
+
+# Bind Ctrl+C (SIGINT) to shutdown handler
+signal.signal(signal.SIGINT, shutdown_handler)
+
+
+while True:
+    time.sleep(1)

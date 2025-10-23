@@ -16,10 +16,16 @@ logging.basicConfig(
 )
 
 def check_internet(interface="wlan0"):
-    """Check if interface has internet (ping Google DNS)"""
+    """Return True if Wi-Fi is connected and has internet."""
+    # Check if interface is up
+    status = subprocess.getoutput("cat /sys/class/net/wlan0/operstate").strip()
+    if status != "up":
+        return False
+
+    # Ping Google DNS
     try:
         subprocess.check_output(
-            ["ping", "-I", interface, "-c", "2", "8.8.8.8"],
+            ["ping", "-c", "2", "8.8.8.8"],
             stderr=subprocess.DEVNULL
         )
         return True

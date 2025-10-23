@@ -3,6 +3,7 @@ from datetime import datetime
 from smartstick.hardware.get_gps import get_gps_coords
 from smartstick.utils.config import BUTTON_PIN
 import threading
+from smartstick.services.tts_engine import tts_speak
 
 class SOSButton:
     """
@@ -52,6 +53,7 @@ class SOSButton:
                     time.sleep(0.05)
                     if time.time() - press_start >= self.hold_time:
                         print("[SOS] Button held for 5 seconds!")
+                        tts_speak("Help Sent")
                         self.send_sos()
                         # wait until released to prevent repeat
                         while self.GPIO.input(self.button_pin) == self.GPIO.LOW:

@@ -28,7 +28,11 @@ class STTStream:
     async def _producer(self):
         while self.running:
             pcm = await self.audio_queue.get()
-            await self.ws_connection.send(pcm)
+            if self.ws_connection:
+                try:
+                    await self.ws_connection.send(pcm)
+                except Exception:
+                    pass
 
     async def _consumer(self):
         while self.running:

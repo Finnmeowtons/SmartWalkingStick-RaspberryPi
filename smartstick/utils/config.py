@@ -9,10 +9,10 @@ def get_path(*paths):
     return os.path.join(BASE_DIR, *paths)
 
 WAKEWORDS = ["jodi", "joe de", "joey"]
-VOSK_SERVER_URI = "ws://192.168.68.114:2700"
+VOSK_SERVER_URI = "ws://10.118.25.138:2700"
 DEVICE_ID = "639270734452"
 
-MQTT_BROKER = "192.168.68.114"
+MQTT_BROKER = "10.118.25.138"
 MQTT_PORT = 1884
 
 GEMINI_API_KEY = "AIzaSyBWEi7EeLKC38WGY47O_KTz3Tp_H0EdNQ8"

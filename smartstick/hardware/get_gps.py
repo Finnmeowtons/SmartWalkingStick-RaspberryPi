@@ -2,8 +2,8 @@ import time
 from gps3 import gps3
 
 # Default coordinates (e.g., school, HQ, or safe fallback)
-DEFAULT_LAT = 16.02131855757801
-DEFAULT_LON = 120.3295448168829
+DEFAULT_LAT = 16.05108362737189
+DEFAULT_LON = 120.3415594056197
 
 def get_gps_coords(timeout=30):
     # """Return (latitude, longitude) as floats if available, or defaults if not."""

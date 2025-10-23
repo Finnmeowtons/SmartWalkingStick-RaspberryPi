@@ -46,7 +46,7 @@ async def detect_objects_and_speak():
         description = await loop.run_in_executor(executor, detect_offline, img_path)
 
     # Run TTS in background
-    await loop.run_in_executor(executor, tts_speak, description)
+    await loop.run_in_executor(executor, tts_speak, description.replace("*", ""))
 
 async def main():
     await detect_objects_and_speak()
